@@ -1,15 +1,9 @@
 USE SI2_Grupo02_2021i
 
-IF OBJECT_ID('ItemAcreditado') IS NOT NULL
+IF OBJECT_ID('ItemHistory') IS NOT NULL
     BEGIN
-        DBCC CHECKIDENT (ItemAcreditado, RESEED, 0)
-        DROP TABLE ItemAcreditado
-    END
-
-IF OBJECT_ID('NotaDeCredito') IS NOT NULL
-    BEGIN
-        DBCC CHECKIDENT (NotaDeCredito, RESEED, 0)
-        DROP TABLE NotaDeCredito
+        DBCC CHECKIDENT (ItemHistory, RESEED, 0)
+        DROP TABLE ItemHistory
     END
 
 IF OBJECT_ID('Item') IS NOT NULL
@@ -18,20 +12,26 @@ IF OBJECT_ID('Item') IS NOT NULL
         DROP TABLE Item
     END
 
-IF OBJECT_ID('Produto') IS NOT NULL
-    DROP TABLE Produto
-
-IF OBJECT_ID('Alteracao') IS NOT NULL
+IF OBJECT_ID('CreditNote') IS NOT NULL
     BEGIN
-        DBCC CHECKIDENT (Alteracao, RESEED, 0)
-        DROP TABLE Alteracao
+        DBCC CHECKIDENT (CreditNote, RESEED, 0)
+        DROP TABLE CreditNote
     END
 
-IF OBJECT_ID('Fatura') IS NOT NULL
+IF OBJECT_ID('Product') IS NOT NULL
+    DROP TABLE Product
+
+IF OBJECT_ID('InvoiceHistory') IS NOT NULL
     BEGIN
-        DBCC CHECKIDENT (Fatura, RESEED, 0)
-        DROP TABLE Fatura
+        DBCC CHECKIDENT (InvoiceHistory, RESEED, 0)
+        DROP TABLE InvoiceHistory
     END
 
-IF OBJECT_ID('Contribuinte') IS NOT NULL
-    DROP TABLE Contribuinte
+IF OBJECT_ID('Invoice') IS NOT NULL
+    BEGIN
+        DBCC CHECKIDENT (Invoice, RESEED, 0)
+        DROP TABLE Invoice
+    END
+
+IF OBJECT_ID('Contributor') IS NOT NULL
+    DROP TABLE Contributor

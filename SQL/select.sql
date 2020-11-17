@@ -1,15 +1,15 @@
 USE SI2_Grupo02_2021i
 
-SELECT * FROM Contribuinte
+SELECT * FROM Contributor
 
-SELECT * FROM Fatura
+SELECT * FROM Invoice
 
-SELECT * FROM Alteracao
+SELECT * FROM InvoiceHistory
 
-SELECT * FROM Produto
+SELECT * FROM Product
+
+SELECT * FROM CreditNote
 
 SELECT * FROM Item
 
-SELECT * FROM NotaDeCredito
-
-SELECT * FROM ItemAcreditado
+SELECT * FROM ItemHistory

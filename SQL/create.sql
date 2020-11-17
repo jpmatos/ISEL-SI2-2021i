@@ -4,66 +4,69 @@ GO
 
 USE SI2_Grupo02_2021i;
 
-CREATE TABLE Contribuinte(
+CREATE TABLE Contributor(
     NIF INT PRIMARY KEY,
-    nome NVARCHAR(128),
-    morada NVARCHAR(128)
+    name NVARCHAR(128),
+    address NVARCHAR(128)
 )
 
-CREATE TABLE Fatura(
-    codigo INT PRIMARY KEY IDENTITY (1, 1),
-    NIF INT FOREIGN KEY REFERENCES Contribuinte(NIF),
-    estado NVARCHAR(16) NOT NULL,
-    valor_total INT NOT NULL,
+CREATE TABLE Invoice(
+    code INT PRIMARY KEY IDENTITY (1, 1),
+    NIF INT FOREIGN KEY REFERENCES Contributor(NIF),
+    state NVARCHAR(16) NOT NULL,
+    total_value INT NOT NULL,
     IVA INT NOT NULL,
-    data_de_criacao DATETIME NOT NULL,
-    data_de_emissao DATETIME,
+    creation_date DATETIME NOT NULL,
+    emission_date DATETIME,
     CHECK(
-        estado = 'emitida' OR
-        estado = 'em actualizacao' OR
-        estado = 'proforma' OR
-        estado = 'anulada'
+        state = 'emitted' OR
+        state = 'updating' OR
+        state = 'proforma' OR
+        state = 'canceled'
         )
 )
 
-CREATE TABLE Alteracao(
-    ID INT PRIMARY KEY IDENTITY(1, 1),
-    data_de_alteracao DATETIME NOT NULL,
-    estado NVARCHAR(16),
-    valor_total INT,
+CREATE TABLE InvoiceHistory(
+    id INT PRIMARY KEY IDENTITY(1, 1),
+    alteration_date DATETIME NOT NULL,
+    state NVARCHAR(16),
+    total_value INT,
     IVA INT,
-    data_de_criacao DATETIME,
-    data_de_emissao DATETIME
+    creation_date DATETIME,
+    emission_date DATETIME
 )
 
-CREATE TABLE Produto(
+CREATE TABLE Product(
     SKU NVARCHAR(10) PRIMARY KEY,
-    descricao NVARCHAR(128),
-    unidades INT NOT NULL,
-    desconto INT NOT NULL
+    description NVARCHAR(128),
+    units INT NOT NULL,
+    discount INT NOT NULL
+)
+
+CREATE TABLE CreditNote(
+    code INT PRIMARY KEY IDENTITY (1, 1),
+    codeInvoice INT NOT NULL FOREIGN KEY REFERENCES Invoice(code),
+    state NVARCHAR(16) NOT NULL,
+    total_value INT NOT NULL,
+    IVA INT NOT NULL,
+    creation_date  DATETIME NOT NULL,
+    emission_date DATETIME,
 )
 
 CREATE TABLE Item(
-    numero INT PRIMARY KEY IDENTITY (1, 1),
-    codigo INT NOT NULL FOREIGN KEY REFERENCES Fatura(codigo),
-    SKU NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES Produto(SKU),
-    descricao NVARCHAR(128),
-    unidades INT NOT NULL,
-    desconto INT NOT NULL
+    number INT PRIMARY KEY IDENTITY (1, 1),
+    code INT NOT NULL FOREIGN KEY REFERENCES Invoice(code),
+    SKU NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES Product(SKU),
+    credit_note INT FOREIGN KEY REFERENCES CreditNote(code),
+    description NVARCHAR(128),
+    units INT NOT NULL,
+    discount INT NOT NULL
 )
 
-CREATE TABLE NotaDeCredito(
-    codigo INT PRIMARY KEY IDENTITY (1, 1),
-    codigoFatura INT NOT NULL FOREIGN KEY REFERENCES Fatura(codigo),
-    estado NVARCHAR(16) NOT NULL,
-    valor_total INT NOT NULL,
-    IVA INT NOT NULL,
-    data_de_criacao  DATETIME NOT NULL,
-    data_de_emissao DATETIME,
-)
-
-CREATE TABLE ItemAcreditado(
-    ID INT PRIMARY KEY IDENTITY (1, 1),
-    numero INT NOT NULL FOREIGN KEY REFERENCES Item(numero),
-    codigo INT NOT NULL FOREIGN KEY REFERENCES NotaDeCredito(codigo)
+CREATE TABLE ItemHistory(
+    id INT PRIMARY KEY IDENTITY(1, 1),
+    alteration_date DATETIME NOT NULL,
+    description NVARCHAR(128),
+    units INT,
+    discount INT
 )
