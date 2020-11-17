@@ -2,7 +2,7 @@ Contributor(**NIF**, name, address)
 
 Invoice(**code**, *NIF*, state, total_value, IVA, creation_date, emission_date)
 - FK: {NIF Ref Contributor(NIF)}
-- IR1: code has values 'FTyyyyy-xxxxx', where 'yyyy' is year and 'xxxx' is invoice number for this year
+- IR1: code has values 'FTyyyy-xxxxx', where 'yyyy' is year and 'xxxx' is invoice number for this year
 - IR2: creation_date and emission_date have values as 'YYYY/MM/DD-HH:MM:SS'
 - IR3: state has values:
     - Emitted, making subsequent invoice changes impossible;
@@ -27,7 +27,7 @@ ItemHistory(**id**, *number*, creation_date, SKU, credit_note, description, unit
 
 CreditNote(**code**, *codeInvoice* state, total_value, IVA, creation_date, emission_date)
 - FK: {codeInvoice Ref Invoice(code)}
-- IR1: code has values 'NCyyyyy-xxxxx', where 'yyyy' is year and 'xxxx' is invoice number for this year
+- IR1: code has values 'NCyyyy-xxxxx', where 'yyyy' is year and 'xxxx' is invoice number for this year
 - IR2: creation_date and emission_date have values as 'YYYY/MM/DD-HH:MM:SS'
 - IR3: state has values:
     - Emitted, making subsequent credit note changes impossible;

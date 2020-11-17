@@ -11,7 +11,7 @@ CREATE TABLE Contributor(
 )
 
 CREATE TABLE Invoice(
-    code INT PRIMARY KEY IDENTITY (1, 1),
+    code NVARCHAR(12) PRIMARY KEY,
     NIF INT FOREIGN KEY REFERENCES Contributor(NIF),
     state NVARCHAR(16) NOT NULL,
     total_value INT NOT NULL,
@@ -44,8 +44,8 @@ CREATE TABLE Product(
 )
 
 CREATE TABLE CreditNote(
-    code INT PRIMARY KEY IDENTITY (1, 1),
-    codeInvoice INT NOT NULL FOREIGN KEY REFERENCES Invoice(code),
+    code NVARCHAR(12) PRIMARY KEY,
+    codeInvoice NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES Invoice(code),
     state NVARCHAR(16) NOT NULL,
     total_value INT NOT NULL,
     IVA INT NOT NULL,
@@ -55,9 +55,9 @@ CREATE TABLE CreditNote(
 
 CREATE TABLE Item(
     number INT PRIMARY KEY IDENTITY (1, 1),
-    code INT NOT NULL FOREIGN KEY REFERENCES Invoice(code),
+    code NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES Invoice(code),
     SKU NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES Product(SKU),
-    credit_note INT FOREIGN KEY REFERENCES CreditNote(code),
+    credit_note NVARCHAR(12) FOREIGN KEY REFERENCES CreditNote(code),
     description NVARCHAR(128),
     units INT NOT NULL,
     discount INT NOT NULL

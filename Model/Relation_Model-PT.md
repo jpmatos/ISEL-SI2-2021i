@@ -2,7 +2,7 @@ Contribuinte(**NIF**, nome, morada)
 
 Fatura(**código**, *NIF*, estado, valor_total, IVA, data_de_criação, data_de_emissão)
 - CE: {NIF Ref Contribuinte(NIF)}
-- RI1: código toma os valores: FTyyyyy-xxxxx, onde yyyy representa o ano e xxxx representa o número da factura emitida num ano
+- RI1: código toma os valores: FTyyyy-xxxxx, onde yyyy representa o ano e xxxx representa o número da factura emitida num ano
 - RI2: data_de_criação e data_de_emissão tem o formato YYYY/MM/DD-HH:MM:SS
 - RI3: estado toma os valores:
            -emitida, impossibilitando posteriores alterações à factura;
@@ -27,7 +27,7 @@ AlteraçãoItem(**id**, *numero*, data_de_criação, SKU, nota_de_credito, descr
 
 NotaDeCrédito(**código**, *códigoFatura* estado, valor_total, IVA, data_de_criação, data_de_emissão)
 - CE: {códigoFatura Ref Fatura(código)}
-- RI1: código toma os valores 'NCyyyyy-xxxxx', onde 'yyyy' representa o ano e 'xxxx' representa o número da factura emitida num ano
+- RI1: código toma os valores 'NCyyyy-xxxxx', onde 'yyyy' representa o ano e 'xxxx' representa o número da factura emitida num ano
 - RI2: data_de_criação e data_de_emissão tem o formato 'YYYY/MM/DD-HH:MM:SS'
 - RI3: estado toma os valores:
     - Emitida, impossibilitando posteriores alterações à nota de credito;
