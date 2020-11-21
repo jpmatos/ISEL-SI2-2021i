@@ -25,8 +25,8 @@ BEGIN
     SELECT @invoice, SKU, units, discount, description
     FROM @itemToAdd
 
-    --Recalculate Invoice values
-    --TODO Extract procedure from  g.
+    --Update Invoice total_value and total_IVA
+    EXEC updateInvoiceValues @invoice
 END
 
 --Test
