@@ -7,26 +7,28 @@ IF OBJECT_ID('nextCode') IS NOT NULL
     DROP FUNCTION nextCode
 GO
 
-CREATE FUNCTION nextCode (@codeType VARCHAR(10))
+CREATE FUNCTION nextCode(@codeType VARCHAR(10))
     RETURNS VARCHAR(MAX) AS
 BEGIN
     DECLARE @current_code VARCHAR(MAX)
 
     --Check if it is Invoice or CreditNote code
-    IF(@codeType = 'invoice')
+    IF (@codeType = 'invoice')
         SELECT @current_code = code FROM Invoice
-    ELSE IF (@codeType = 'creditnote')
-        SELECT @current_code = code FROM CreditNote
     ELSE
-        RETURN 'INVALID_PARAMETER'
+        IF (@codeType = 'creditnote')
+            SELECT @current_code = code FROM CreditNote
+        ELSE
+            RETURN 'INVALID_PARAMETER'
 
     --Check if it is the first code of the table (table was empty)
     IF @current_code IS NULL
         BEGIN
-            IF(@codeType = 'invoice')
+            IF (@codeType = 'invoice')
                 RETURN CONCAT('FT', YEAR(GETDATE()), '-', 0)
-            ELSE IF (@codeType = 'creditnote')
-                RETURN CONCAT('NC', YEAR(GETDATE()), '-', 0)
+            ELSE
+                IF (@codeType = 'creditnote')
+                    RETURN CONCAT('NC', YEAR(GETDATE()), '-', 0)
         END
 
     --Remove 'FT' or 'NC' from string
@@ -59,10 +61,11 @@ BEGIN
 
     --Build the string and return it
     DECLARE @res VARCHAR(MAX)
-    IF(@codeType = 'invoice')
+    IF (@codeType = 'invoice')
         SET @res = CONCAT('FT', @year, '-', @num)
-    ELSE IF (@codeType = 'creditnote')
-        SET @res = CONCAT('NC', @year, '-', @num)
+    ELSE
+        IF (@codeType = 'creditnote')
+            SET @res = CONCAT('NC', @year, '-', @num)
     RETURN @res
 END
 GO
@@ -72,6 +75,9 @@ DECLARE @res VARCHAR(MAX)
 EXEC @res = nextCode 'invoice'
 print @res
 
-INSERT INTO Invoice VALUES('FT2020-00006', NULL, 'updating', 10, 0, GETDATE(), NULL)
-INSERT INTO Invoice VALUES('FT2020-13458', NULL, 'updating', 10, 0, GETDATE(), NULL)
-INSERT INTO Invoice VALUES('FT2020-13460', NULL, 'updating', 10, 0, GETDATE(), NULL)
+INSERT INTO Invoice
+VALUES ('FT2020-00006', NULL, 'updating', 0, 0, GETDATE(), NULL)
+INSERT INTO Invoice
+VALUES ('FT2020-13458', NULL, 'updating', 0, 0, GETDATE(), NULL)
+INSERT INTO Invoice
+VALUES ('FT2020-13460', NULL, 'updating', 0, 0, GETDATE(), NULL)
