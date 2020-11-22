@@ -32,7 +32,7 @@ END
 
 --Test
 INSERT INTO Contributor
-VALUES (123, 'a', 'b')
+VALUES (123, NULL, NULL)
 INSERT INTO Invoice
 VALUES ('FT2020-1', 123, 'updating', 0, 0, GETDATE(), NULL)
 INSERT INTO Product

@@ -8,7 +8,7 @@ IF OBJECT_ID('insertProduct') IS NOT NULL
     DROP PROCEDURE insertProduct
 GO
 
-CREATE PROCEDURE insertProduct @SKU NVARCHAR(10), @sale_price DECIMAL(9, 2), @IVA DECIMAL(3, 2),
+CREATE PROCEDURE insertProduct @SKU NVARCHAR(10), @sale_price MONEY, @IVA DECIMAL(3, 2),
                                @description NVARCHAR(128)
 AS
     INSERT INTO Product VALUES (@SKU, @sale_price, @IVA, @description)
@@ -19,7 +19,7 @@ IF OBJECT_ID('updateProduct') IS NOT NULL
     DROP PROCEDURE updateProduct
 GO
 
-CREATE PROCEDURE updateProduct @SKU NVARCHAR(10), @sale_price DECIMAL(9, 2), @IVA DECIMAL(3, 2),
+CREATE PROCEDURE updateProduct @SKU NVARCHAR(10), @sale_price MONEY, @IVA DECIMAL(3, 2),
                                @description NVARCHAR(128)
 AS
     BEGIN TRAN
@@ -48,7 +48,7 @@ IF OBJECT_ID('deleteProduct') IS NOT NULL
     DROP PROCEDURE deleteProduct
 GO
 
-CREATE PROCEDURE deleteProduct @SKU INT
+CREATE PROCEDURE deleteProduct @SKU NVARCHAR(10)
 AS
     BEGIN TRAN
         IF EXISTS(SELECT *
