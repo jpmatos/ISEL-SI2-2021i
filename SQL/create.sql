@@ -8,6 +8,15 @@ IF SCHEMA_ID('dbo') IS NULL
     EXEC ('CREATE SCHEMA dbo');
 GO
 
+CREATE TABLE InvoiceState
+(
+    state NVARCHAR(16) PRIMARY KEY
+)
+
+CREATE TABLE CreditNoteState
+(
+    state NVARCHAR(16) PRIMARY KEY
+)
 
 CREATE TABLE Contributor
 (
@@ -19,74 +28,81 @@ CREATE TABLE Contributor
 CREATE TABLE Invoice
 (
     code          NVARCHAR(12) PRIMARY KEY,
-    NIF           INT FOREIGN KEY REFERENCES Contributor (NIF),
-    state         NVARCHAR(16) NOT NULL,
-    total_value   DECIMAL(9, 2), --without IVA
-    total_IVA     DECIMAL(9, 2),
+    NIF           INT          NOT NULL FOREIGN KEY REFERENCES Contributor (NIF),
+    state         NVARCHAR(16) NOT NULL FOREIGN KEY REFERENCES InvoiceState (state),
+    total_value   MONEY, --without IVA
+    total_IVA     MONEY,
     creation_date DATETIME     NOT NULL,
-    emission_date DATETIME,
-    CHECK (
-            state = 'emitted' OR
-            state = 'updating' OR
-            state = 'proforma' OR
-            state = 'canceled'
-        )
-)
-
-CREATE TABLE InvoiceHistory
-(
-    id              INT PRIMARY KEY IDENTITY (1, 1),
-    alteration_date DATETIME NOT NULL,
-    state           NVARCHAR(16),
-    total_value     DECIMAL(9, 2),
-    total_IVA       DECIMAL(9, 2),
-    creation_date   DATETIME,
-    emission_date   DATETIME
+    emission_date DATETIME
 )
 
 CREATE TABLE Product
 (
     SKU         NVARCHAR(10) PRIMARY KEY,
-    sale_price  DECIMAL(9, 2),
+    sale_price  MONEY,
     IVA         DECIMAL(3, 2),
     description NVARCHAR(128),
     CHECK (
-            IVA >= 0.01 AND
+            IVA >= 0 AND
             IVA <= 1
-        )
-)
-
-CREATE TABLE CreditNote
-(
-    code          NVARCHAR(12) PRIMARY KEY,
-    codeInvoice   NVARCHAR(12)  NOT NULL FOREIGN KEY REFERENCES Invoice (code),
-    state         NVARCHAR(16)  NOT NULL,
-    total_value   DECIMAL(9, 2) NOT NULL, --without IVA
-    total_IVA     DECIMAL(9, 2) NOT NULL,
-    creation_date DATETIME      NOT NULL,
-    emission_date DATETIME,
-    CHECK (
-            state = 'emitted' OR
-            state = 'updating'
         )
 )
 
 CREATE TABLE Item
 (
-    number      INT PRIMARY KEY IDENTITY (1, 1),
     code        NVARCHAR(12)  NOT NULL FOREIGN KEY REFERENCES Invoice (code),
     SKU         NVARCHAR(10)  NOT NULL FOREIGN KEY REFERENCES Product (SKU),
-    credit_note NVARCHAR(12) FOREIGN KEY REFERENCES CreditNote (code),
+    sale_price  MONEY         NOT NULL,
+    IVA         DECIMAL(3, 2) NOT NULL,
     units       INT           NOT NULL,
     discount    DECIMAL(9, 2) NOT NULL,
-    description NVARCHAR(128)
+    description NVARCHAR(128),
+    CONSTRAINT number PRIMARY KEY (code, SKU)
+)
+
+CREATE TABLE CreditNote
+(
+    code          NVARCHAR(12) PRIMARY KEY,
+    codeInvoice   NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES Invoice (code),
+    state         NVARCHAR(16) NOT NULL FOREIGN KEY REFERENCES CreditNoteState (state),
+    total_value   MONEY        NOT NULL, --without IVA
+    total_IVA     MONEY        NOT NULL,
+    creation_date DATETIME     NOT NULL,
+    emission_date DATETIME
+)
+
+CREATE TABLE ItemCredit
+(
+    credit_code     NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES CreditNote (code),
+    item_code NVARCHAR(12)  NOT NULL,
+    SKU         NVARCHAR(10)  NOT NULL,
+    quantity INT          NOT NULL,
+    FOREIGN KEY (item_code, SKU) REFERENCES Item(code, SKU),
+    CONSTRAINT item_credit_id PRIMARY KEY (credit_code, item_code, SKU)
+)
+
+CREATE TABLE InvoiceHistory
+(
+    code            NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES Invoice (code),
+    alteration_date DATETIME     NOT NULL,
+    NIF             INT,
+    state           NVARCHAR(16),
+    total_value     MONEY,
+    total_IVA       MONEY,
+    creation_date   DATETIME,
+    emission_date   DATETIME,
+    constraint invoice_history_id PRIMARY KEY (code, alteration_date)
 )
 
 CREATE TABLE ItemHistory
 (
-    id              INT PRIMARY KEY IDENTITY (1, 1),
-    alteration_date DATETIME NOT NULL,
+    code            NVARCHAR(12) NOT NULL,
+    alteration_date DATETIME     NOT NULL,
+    SKU             NVARCHAR(10),
+    sale_price      MONEY,
+    IVA             DECIMAL(3, 2),
     description     NVARCHAR(128),
     units           INT,
-    discount        DECIMAL(9, 2)
+    discount        DECIMAL(9, 2),
+    FOREIGN KEY (code, alteration_date) REFERENCES InvoiceHistory(code, alteration_date),
 )

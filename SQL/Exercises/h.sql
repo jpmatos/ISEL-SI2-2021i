@@ -3,10 +3,6 @@ GO
 
 --(h) Adicionar itens a uma factura;
 
-IF OBJECT_ID('addItemToInvoice') IS NOT NULL
-    DROP PROCEDURE insertItemToInvoice
-GO
-
 IF TYPE_ID('ItemToAddListType') IS NULL
 CREATE TYPE ItemToAddListType AS TABLE
 (
@@ -17,21 +13,28 @@ CREATE TYPE ItemToAddListType AS TABLE
 )
 GO
 
+IF OBJECT_ID('addItemToInvoice') IS NOT NULL
+    DROP PROCEDURE insertItemToInvoice
+GO
+
 CREATE PROCEDURE insertItemToInvoice @invoice NVARCHAR(12), @itemToAdd ItemToAddListType READONLY
 AS
 BEGIN
     --Add items
     INSERT INTO Item (code, SKU, units, discount, description)
-    SELECT @invoice, SKU, units, discount, description
+    SELECT @invoice,
+           SKU,
+           units,
+           discount,
+           description
     FROM @itemToAdd
-
-    --Update Invoice total_value and total_IVA
-    EXEC updateInvoiceValues @invoice
 END
 
 --Test
+INSERT INTO Contributor
+VALUES (123, 'a', 'b')
 INSERT INTO Invoice
-VALUES ('FT2020-1', NULL, 'updating', 0, 0, GETDATE(), NULL)
+VALUES ('FT2020-1', 123, 'updating', 0, 0, GETDATE(), NULL)
 INSERT INTO Product
 VALUES ('P01', 10, 0.05, 'potatoes'),
        ('P02', 15, 0.05, 'pencils'),
@@ -41,4 +44,4 @@ INSERT INTO @itemToAdd
 VALUES ('P01', 1, 0, 'desc1'),
        ('P02', 3, 1, 'desc2'),
        ('P03', 5, 2, 'desc3')
-EXEC insertItemToInvoice 'FT2020-1', @itemToAdd
+    EXEC insertItemToInvoice 'FT2020-1', @itemToAdd

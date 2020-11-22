@@ -43,7 +43,7 @@ BEGIN
     WHERE code = @code
 
     --Update Invoice total_value and total_IVA
-    EXEC updateInvoiceValues @invoice
+    --EXEC updateInvoiceValues @invoice
 END
 
 --Test
@@ -60,18 +60,18 @@ VALUES ('P01', 10, 0.05, 'potatoes'),
        ('P08', 35, 0.20, 'cucumber')
 --Test 1: 1 2 3 = 45.00 47.25
 INSERT INTO Item
-VALUES ('FT2020-1', 'P01', NULL, 'item01', 1, 0),
-       ('FT2020-1', 'P02', NULL, 'item02', 1, 0),
-       ('FT2020-1', 'P03', NULL, 'item03', 1, 0),
-       ('FT2020-1', 'P04', NULL, 'item04', 1, 0)
+VALUES ('FT2020-1', 'P01', NULL, 10, 0.05, 'item01', 1, 0),
+       ('FT2020-1', 'P02', NULL, 15, 0.05, 'item02', 1, 0),
+       ('FT2020-1', 'P03', NULL, 20, 0.05, 'item03', 1, 0),
+       ('FT2020-1', 'P04', NULL, 25, 0.05, 'item04', 1, 0)
 --Test 2: 5 6 = 165.00 192.00
 INSERT INTO Item
-VALUES ('FT2020-1', 'P05', NULL, 'item05', 2, 0),
-       ('FT2020-1', 'P06', NULL, 'item06', 3, 0)
+VALUES ('FT2020-1', 'P05', NULL, 30, 0.10, 'item05', 2, 0),
+       ('FT2020-1', 'P06', NULL, 35, 0.20, 'item06', 3, 0)
 --Test 3: 7 8 = 150.00 177.00
 INSERT INTO Item
-VALUES ('FT2020-1', 'P07', NULL, 'item07', 2, 10),
-       ('FT2020-1', 'P08', NULL, 'item08', 3, 5)
+VALUES ('FT2020-1', 'P07', NULL, 30, 0.10, 'item07', 2, 10),
+       ('FT2020-1', 'P08', NULL, 35, 0.20, 'item08', 3, 5)
 
 DECLARE @itemList ItemListType
 INSERT INTO @itemList

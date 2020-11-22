@@ -1,22 +1,31 @@
 USE SI2_Grupo02_2021i
 
 SELECT *
+FROM InvoiceState
+
+SELECT *
+FROM CreditNoteState
+
+SELECT *
 FROM Contributor
 
 SELECT *
 FROM Invoice
 
 SELECT *
-FROM InvoiceHistory
+FROM Product
 
 SELECT *
-FROM Product
+FROM Item
 
 SELECT *
 FROM CreditNote
 
 SELECT *
-FROM Item
+FROM ItemCredit
+
+SELECT *
+FROM InvoiceHistory
 
 SELECT *
 FROM ItemHistory
