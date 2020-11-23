@@ -26,16 +26,18 @@ BEGIN
         BEGIN
             UPDATE Invoice
             SET total_value = (
-                SELECT SUM(sale_price * units - discount)
+                SELECT SUM((sale_price * units - discount) - ISNULL(CN.total_value, 0))
                 FROM Item I
+                        LEFT JOIN ItemCredit IC ON I.code = IC.invoice_code AND I.SKU = IC.SKU
+                        LEFT JOIN CreditNote CN ON IC.credit_code = CN.code
                 WHERE I.code = @code
-                  AND I.credit_note IS NULL
             ),
                 total_IVA   = (
-                    SELECT SUM((sale_price * units - discount) * IVA)
+                    SELECT SUM(((sale_price * units - discount) * IVA) - ISNULL(CN.total_IVA, 0))
                     FROM Item I
+                        LEFT JOIN ItemCredit IC ON I.code = IC.invoice_code AND I.SKU = IC.SKU
+                        LEFT JOIN CreditNote CN ON IC.credit_code = CN.code
                     WHERE I.code = @code
-                      AND I.credit_note IS NULL
                 )
             WHERE Invoice.code = @code
             FETCH NEXT FROM cursor_code INTO @code
@@ -45,12 +47,13 @@ BEGIN
 END
 GO
 
+
 --Triggers
 IF OBJECT_ID('updateInvoiceValueItem') IS NOT NULL
-        DROP TRIGGER updateInvoiceValueItem
+    DROP TRIGGER updateInvoiceValueItem
 GO
 
-    --Will trigger even if only description was updated
+--Will trigger even if only description was updated
 CREATE TRIGGER updateInvoiceValueItem
     ON Item
     AFTER INSERT, UPDATE
@@ -62,16 +65,18 @@ BEGIN
 END
 GO
 
+
 IF OBJECT_ID('updateInvoiceValueCreditNote') IS NOT NULL
     DROP TRIGGER updateInvoiceValueCreditNote
 GO
 
+--Will trigger even if only state was updated
 CREATE TRIGGER updateInvoiceValueCreditNote
     ON CreditNote
     AFTER INSERT, UPDATE
     AS
 BEGIN
     DECLARE @codes CodesListType
-    INSERT INTO @codes SELECT code FROM inserted
+    INSERT INTO @codes SELECT codeInvoice FROM inserted
     EXEC updateInvoiceValue @codes
 END

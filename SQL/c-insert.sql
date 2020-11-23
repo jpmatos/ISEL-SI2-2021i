@@ -14,11 +14,13 @@ VALUES ('emitted'),
 
 --Contributor
 INSERT INTO Contributor
-VALUES (123, NULL, NULL)
+VALUES (123, 'John', 'address123')
 
 --Invoice
 INSERT INTO Invoice
-VALUES ('FT2020-1', 123, 'updating', 0, 0, GETDATE(), NULL)
+VALUES ('FT2020-1', 123, 'updating', 0, 0, GETDATE(), NULL),
+       ('FT2020-2', 123, 'updating', 0, 0, GETDATE(), NULL),
+       ('FT2020-3', 123, 'updating', 0, 0, GETDATE(), NULL)
 
 --Product
 INSERT INTO Product

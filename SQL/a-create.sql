@@ -55,7 +55,7 @@ CREATE TABLE Item
     sale_price  MONEY         NOT NULL,
     IVA         DECIMAL(3, 2) NOT NULL,
     units       INT           NOT NULL,
-    discount    DISCOUNT NOT NULL,
+    discount    MONEY NOT NULL,
     description NVARCHAR(128),
     CONSTRAINT number PRIMARY KEY (code, SKU)
 )
@@ -91,7 +91,7 @@ CREATE TABLE InvoiceHistory
     total_IVA       MONEY,
     creation_date   DATETIME,
     emission_date   DATETIME,
-    constraint invoice_history_id PRIMARY KEY (code, alteration_date)
+    CONSTRAINT invoice_history_id PRIMARY KEY (code, alteration_date)
 )
 
 CREATE TABLE ItemHistory
@@ -105,4 +105,5 @@ CREATE TABLE ItemHistory
     discount        MONEY,
     description     NVARCHAR(128),
     FOREIGN KEY (code, alteration_date) REFERENCES InvoiceHistory(code, alteration_date),
+    CONSTRAINT item_history_id PRIMARY KEY (code, alteration_date, SKU)
 )
