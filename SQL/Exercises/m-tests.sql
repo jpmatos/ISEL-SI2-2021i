@@ -148,3 +148,37 @@ EXEC insertCreditNote 'FT2020-3', @itemList
 SELECT *
 FROM Invoice I
 WHERE I.code = 'FT2020-3'
+
+
+------j. Tests------
+--Test 1 -- Get CreditNote for 2020
+SELECT * FROM viewCreditNoteYear(2020)
+
+
+------k. Tests------
+--Test 1 -- Update Invoice state to 'proforma'
+SELECT * FROM Invoice WHERE code = 'FT2020-1'
+EXEC updateInvoiceState 'FT2020-1', 'proforma'
+SELECT * FROM Invoice WHERE code = 'FT2020-1'
+
+--Test 2 -- Try to update it to the same state and see it fail
+EXEC updateInvoiceState 'FT2020-1', 'proforma'
+
+--Test 3 -- Update Invoice state to 'emitted'
+SELECT * FROM Invoice WHERE code = 'FT2020-1'
+EXEC updateInvoiceState 'FT2020-1', 'emitted'
+SELECT * FROM Invoice WHERE code = 'FT2020-1'
+
+--Test 4 -- Try to update from 'emitted' and see it fail
+EXEC updateInvoiceState 'FT2020-1', 'canceled'
+EXEC updateInvoiceState 'FT2020-1', 'proforma'
+EXEC updateInvoiceState 'FT2020-1', 'updating'
+
+
+------k. Tests------
+--Test 1 -- See what's in the View
+SELECT * FROM InvoiceContributor
+
+--Test 2 -- Update Invoice state from View
+UPDATE InvoiceContributor SET state = 'emitted' WHERE code = 'FT2020-2'
+SELECT * FROM InvoiceContributor

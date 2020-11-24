@@ -20,6 +20,12 @@ GO
 CREATE PROCEDURE insertItemToInvoice @invoice NVARCHAR(12), @itemToAdd ItemToAddListType READONLY
 AS
 BEGIN
+    --Check Invoice state
+    DECLARE @state NVARCHAR(12)
+    SELECT @state = state FROM Invoice WHERE code = @invoice
+    IF( @state != 'updating')
+        THROW 50000, 'Can not insert Items in current Invoice state!', 1
+
     --Add items
     INSERT INTO Item (code, SKU, sale_price, IVA, units, discount, description)
     SELECT @invoice,

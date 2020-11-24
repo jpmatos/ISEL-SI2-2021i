@@ -18,6 +18,12 @@ GO
 CREATE PROCEDURE insertCreditNote @invoice NVARCHAR(12), @itemList ItemListType READONLY
 AS
 BEGIN
+    --Check Invoice state
+    DECLARE @state NVARCHAR(12)
+    SELECT @state = state FROM Invoice WHERE code = @invoice
+    IF( @state != 'emitted')
+        THROW 50000, 'Can not create Credit Note for a non-emitted Invoice!', 1
+
     --Create CreditNote
     DECLARE @code VARCHAR(MAX)
     EXEC @code = nextCode 'creditnote'
