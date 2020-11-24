@@ -55,7 +55,7 @@ CREATE TABLE Item
     sale_price  MONEY         NOT NULL,
     IVA         DECIMAL(3, 2) NOT NULL,
     units       INT           NOT NULL,
-    discount    MONEY NOT NULL,
+    discount    MONEY         NOT NULL,
     description NVARCHAR(128),
     CONSTRAINT number PRIMARY KEY (code, SKU)
 )
@@ -73,12 +73,12 @@ CREATE TABLE CreditNote
 
 CREATE TABLE ItemCredit
 (
-    credit_code     NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES CreditNote (code),
-    item_code NVARCHAR(12)  NOT NULL,
-    SKU         NVARCHAR(10)  NOT NULL,
-    quantity INT          NOT NULL,
-    FOREIGN KEY (item_code, SKU) REFERENCES Item(code, SKU),
-    CONSTRAINT item_credit_id PRIMARY KEY (credit_code, item_code, SKU)
+    credit_code  NVARCHAR(12) NOT NULL FOREIGN KEY REFERENCES CreditNote (code),
+    invoice_code NVARCHAR(12) NOT NULL,
+    SKU          NVARCHAR(10) NOT NULL,
+    quantity     INT          NOT NULL,
+    FOREIGN KEY (invoice_code, SKU) REFERENCES Item (code, SKU),
+    CONSTRAINT item_credit_id PRIMARY KEY (credit_code, invoice_code, SKU)
 )
 
 CREATE TABLE InvoiceHistory
@@ -104,6 +104,6 @@ CREATE TABLE ItemHistory
     units           INT,
     discount        MONEY,
     description     NVARCHAR(128),
-    FOREIGN KEY (code, alteration_date) REFERENCES InvoiceHistory(code, alteration_date),
+    FOREIGN KEY (code, alteration_date) REFERENCES InvoiceHistory (code, alteration_date),
     CONSTRAINT item_history_id PRIMARY KEY (code, alteration_date, SKU)
 )

@@ -21,7 +21,7 @@ BEGIN
     --Check Invoice state
     DECLARE @state NVARCHAR(12)
     SELECT @state = state FROM Invoice WHERE code = @invoice
-    IF( @state != 'emitted')
+    IF (@state != 'emitted')
         THROW 50000, 'Can not create Credit Note for a non-emitted Invoice!', 1
 
     --Create CreditNote
@@ -41,16 +41,16 @@ BEGIN
         FROM Item I
                  INNER JOIN ItemCredit IC ON I.code = IC.invoice_code AND I.SKU = IC.SKU
         WHERE IC.invoice_code IN (SELECT code FROM @itemList)
-        AND IC.SKU IN (SELECT SKU FROM @itemList)
-        AND IC.credit_code = @code
+          AND IC.SKU IN (SELECT SKU FROM @itemList)
+          AND IC.credit_code = @code
     ),
         total_IVA   = (
             SELECT SUM((sale_price * quantity - discount) * IVA)
             FROM Item I
                      INNER JOIN ItemCredit IC ON I.code = IC.invoice_code AND I.SKU = IC.SKU
-        WHERE IC.invoice_code IN (SELECT code FROM @itemList)
-        AND IC.SKU IN (SELECT SKU FROM @itemList)
-        AND IC.credit_code = @code
+            WHERE IC.invoice_code IN (SELECT code FROM @itemList)
+              AND IC.SKU IN (SELECT SKU FROM @itemList)
+              AND IC.credit_code = @code
         )
     WHERE code = @code
 END

@@ -58,7 +58,8 @@ FROM Contributor
 
 
 ------g. Tests------
---Test 1 -- Insert CreditNote. Expected Result: total_price = 45.00; total_IVA = 47.25;
+UPDATE Invoice SET state = 'emitted' WHERE code = 'FT2020-1'
+--Test 1 -- Insert CreditNote. Expected Result: total_price = 45.00; total_IVA = 2.25;
 SELECT *
 FROM CreditNote
 
@@ -72,7 +73,7 @@ EXEC insertCreditNote 'FT2020-1', @itemList
 SELECT *
 FROM CreditNote
 
---Test 2 -- Insert CreditNote. Expected Result: total_price = 165.00; total_IVA = 192.00;
+--Test 2 -- Insert CreditNote. Expected Result: total_price = 165.00; total_IVA = 27.00;
 SELECT *
 FROM CreditNote
 
@@ -85,7 +86,7 @@ EXEC insertCreditNote 'FT2020-1', @itemList
 SELECT *
 FROM CreditNote
 
---Test 3 -- Insert CreditNote. Expected Result: total_price = 150.00; total_IVA = 175.00;
+--Test 3 -- Insert CreditNote. Expected Result: total_price = 120.00; total_IVA = 22.00;
 SELECT *
 FROM CreditNote
 
@@ -134,21 +135,6 @@ SELECT *
 FROM Invoice I
 WHERE I.code = 'FT2020-3'
 
---Test 2 -- Create CreditNote and check Invoice values update
--- Expected Values: total_value = 123.00; total_IVA = 6.15
-SELECT *
-FROM Invoice I
-WHERE I.code = 'FT2020-3'
-
-DECLARE @itemList ItemListType
-INSERT INTO @itemList
-VALUES ('P02', 1)
-EXEC insertCreditNote 'FT2020-3', @itemList
-
-SELECT *
-FROM Invoice I
-WHERE I.code = 'FT2020-3'
-
 
 ------j. Tests------
 --Test 1 -- Get CreditNote for 2020
@@ -157,22 +143,22 @@ SELECT * FROM viewCreditNoteYear(2020)
 
 ------k. Tests------
 --Test 1 -- Update Invoice state to 'proforma'
-SELECT * FROM Invoice WHERE code = 'FT2020-1'
-EXEC updateInvoiceState 'FT2020-1', 'proforma'
-SELECT * FROM Invoice WHERE code = 'FT2020-1'
+SELECT * FROM Invoice WHERE code = 'FT2020-2'
+EXEC updateInvoiceState 'FT2020-2', 'proforma'
+SELECT * FROM Invoice WHERE code = 'FT2020-2'
 
 --Test 2 -- Try to update it to the same state and see it fail
-EXEC updateInvoiceState 'FT2020-1', 'proforma'
+EXEC updateInvoiceState 'FT2020-2', 'proforma'
 
 --Test 3 -- Update Invoice state to 'emitted'
-SELECT * FROM Invoice WHERE code = 'FT2020-1'
-EXEC updateInvoiceState 'FT2020-1', 'emitted'
-SELECT * FROM Invoice WHERE code = 'FT2020-1'
+SELECT * FROM Invoice WHERE code = 'FT2020-2'
+EXEC updateInvoiceState 'FT2020-2', 'emitted'
+SELECT * FROM Invoice WHERE code = 'FT2020-2'
 
 --Test 4 -- Try to update from 'emitted' and see it fail
-EXEC updateInvoiceState 'FT2020-1', 'canceled'
-EXEC updateInvoiceState 'FT2020-1', 'proforma'
-EXEC updateInvoiceState 'FT2020-1', 'updating'
+EXEC updateInvoiceState 'FT2020-2', 'canceled'
+EXEC updateInvoiceState 'FT2020-2', 'proforma'
+EXEC updateInvoiceState 'FT2020-2', 'updating'
 
 
 ------k. Tests------
@@ -180,5 +166,5 @@ EXEC updateInvoiceState 'FT2020-1', 'updating'
 SELECT * FROM InvoiceContributor
 
 --Test 2 -- Update Invoice state from View
-UPDATE InvoiceContributor SET state = 'emitted' WHERE code = 'FT2020-2'
+UPDATE InvoiceContributor SET state = 'emitted' WHERE code = 'FT2020-3'
 SELECT * FROM InvoiceContributor

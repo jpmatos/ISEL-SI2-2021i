@@ -23,7 +23,7 @@ BEGIN
     --Check Invoice state
     DECLARE @state NVARCHAR(12)
     SELECT @state = state FROM Invoice WHERE code = @invoice
-    IF( @state != 'updating')
+    IF (@state != 'updating')
         THROW 50000, 'Can not insert Items in current Invoice state!', 1
 
     --Add items
@@ -36,7 +36,7 @@ BEGIN
            discount,
            I.description
     FROM @itemToAdd I
-        INNER JOIN Product P ON I.SKU = P.SKU
+             INNER JOIN Product P ON I.SKU = P.SKU
 END
 
 
