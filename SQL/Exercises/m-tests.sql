@@ -7,14 +7,16 @@ PRINT ('d. Test 1 - Insert Product P10')
 BEGIN TRY
     BEGIN TRAN
         DECLARE @product NVARCHAR(10) = 'P10'
+        DECLARE @sale_price MONEY = 10
+        DECLARE @IVA DECIMAL(3, 2) = 0.2
         IF (SELECT COUNT(SKU) FROM Product WHERE SKU = @product) != 0
             BEGIN
                 PRINT CONCAT('FAILED - Product ', @product, ' already exists!')
                 RAISERROR ('Test Failed', 16, 1)
             END
 
-        EXEC insertProduct @product, 10, 0.2, 'insertProduct Procedure Test'
-        IF (SELECT COUNT(SKU) FROM Product WHERE SKU = @product) = 0
+        EXEC insertProduct @product, @sale_price, @IVA, 'insertProduct Procedure Test'
+        IF (SELECT COUNT(SKU) FROM Product WHERE SKU = @product AND sale_price = @sale_price AND IVA = @IVA) = 0
             BEGIN
                 PRINT CONCAT('FAILED - Product ', @product, ' was not inserted!')
                 RAISERROR ('Test Failed', 16, 1)
