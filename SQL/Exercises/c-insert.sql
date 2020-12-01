@@ -31,7 +31,8 @@ VALUES ('P01', 10, 0.05, 'potatoes'),
        ('P05', 30, 0.10, 'marbles'),
        ('P06', 35, 0.20, 'pens'),
        ('P07', 30, 0.10, 'toy'),
-       ('P08', 35, 0.20, 'cucumber')
+       ('P08', 35, 0.20, 'cucumber'),
+       ('P09', 99, 0.50, 'apples')
 
 --Item
 INSERT INTO Item

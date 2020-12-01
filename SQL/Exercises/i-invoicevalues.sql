@@ -61,19 +61,3 @@ BEGIN
     EXEC updateInvoiceValue @codes
 END
 GO
-
-
--- IF OBJECT_ID('updateInvoiceValueCreditNote') IS NOT NULL
---     DROP TRIGGER updateInvoiceValueCreditNote
--- GO
---
--- --Will trigger even if only state was updated
--- CREATE TRIGGER updateInvoiceValueCreditNote
---     ON CreditNote
---     AFTER INSERT, UPDATE
---     AS
--- BEGIN
---     DECLARE @codes CodesListType
---     INSERT INTO @codes SELECT codeInvoice FROM inserted
---     EXEC updateInvoiceValue @codes
--- END

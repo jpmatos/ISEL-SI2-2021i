@@ -100,34 +100,3 @@ BEGIN
         END
 END
 GO
-
-
--- SELECT *
--- FROM InvoiceHistory
---
--- SELECT *
--- FROM Invoice
---
--- INSERT INTO Invoice
--- VALUES ('FT2020-4', 123, 'updating', 0, 0, GETDATE(), NULL)
---
--- UPDATE Invoice
--- SET total_value = 28
--- WHERE code = 'FT2020-4'
--- DELETE
--- FROM Invoice
--- WHERE code = 'FT2020-4'
---
---
--- SELECT *
--- FROM ItemHistory
--- SELECT *
--- FROM InvoiceHistory
--- SELECT *
--- FROM Invoice
---
--- INSERT INTO Item
--- VALUES ('FT2020-4', 'P01', 0, 0, 1, 0, 'asd')
--- UPDATE Item
--- SET sale_price = '29'
--- WHERE code = 'FT2020-4'
