@@ -17,29 +17,32 @@ GO
 CREATE PROCEDURE updateInvoiceValue @codes CodesListType READONLY
 AS
 BEGIN
-    DECLARE @code NVARCHAR(12)
-    DECLARE cursor_code CURSOR FOR
-        SELECT code FROM @codes
-    OPEN cursor_code
-    FETCH NEXT FROM cursor_code INTO @code
-    WHILE @@FETCH_STATUS = 0
-        BEGIN
-            UPDATE Invoice
-            SET total_value = (
-                SELECT SUM(sale_price * units - discount)
-                FROM Item I
-                WHERE I.code = @code
-            ),
-                total_IVA   = (
-                    SELECT SUM((sale_price * units - discount) * IVA)
+    SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+    BEGIN TRAN
+        DECLARE @code NVARCHAR(12)
+        DECLARE cursor_code CURSOR FOR
+            SELECT code FROM @codes
+        OPEN cursor_code
+        FETCH NEXT FROM cursor_code INTO @code
+        WHILE @@FETCH_STATUS = 0
+            BEGIN
+                UPDATE Invoice
+                SET total_value = (
+                    SELECT SUM(sale_price * units - discount)
                     FROM Item I
                     WHERE I.code = @code
-                )
-            WHERE Invoice.code = @code
-            FETCH NEXT FROM cursor_code INTO @code
-        END
-    CLOSE cursor_code
-    DEALLOCATE cursor_code
+                ),
+                    total_IVA   = (
+                        SELECT SUM((sale_price * units - discount) * IVA)
+                        FROM Item I
+                        WHERE I.code = @code
+                    )
+                WHERE Invoice.code = @code
+                FETCH NEXT FROM cursor_code INTO @code
+            END
+        CLOSE cursor_code
+        DEALLOCATE cursor_code
+    COMMIT
 END
 GO
 

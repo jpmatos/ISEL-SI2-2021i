@@ -20,23 +20,29 @@ GO
 CREATE PROCEDURE insertItemToInvoice @invoice NVARCHAR(12), @itemToAdd ItemToAddListType READONLY
 AS
 BEGIN
-    --Check Invoice state
-    DECLARE @state NVARCHAR(12)
-    SELECT @state = state FROM Invoice WHERE code = @invoice
-    IF (@state != 'updating')
-        THROW 50000, 'Can not insert Items in current Invoice state!', 1
+    SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+    BEGIN TRAN
+        --Check Invoice state
+        DECLARE @state NVARCHAR(12)
+        SELECT @state = state FROM Invoice WHERE code = @invoice
+        IF (@state != 'updating')
+            BEGIN
+                ROLLBACK;
+                THROW 50000, 'Can not insert Items in current Invoice state!', 1
+            END
 
-    --Add items
-    INSERT INTO Item (code, SKU, sale_price, IVA, units, discount, description)
-    SELECT @invoice,
-           I.SKU,
-           sale_price,
-           IVA,
-           units,
-           discount,
-           I.description
-    FROM @itemToAdd I
-             INNER JOIN Product P ON I.SKU = P.SKU
+        --Add items
+        INSERT INTO Item (code, SKU, sale_price, IVA, units, discount, description)
+        SELECT @invoice,
+               I.SKU,
+               sale_price,
+               IVA,
+               units,
+               discount,
+               I.description
+        FROM @itemToAdd I
+                 INNER JOIN Product P ON I.SKU = P.SKU
+    COMMIT
 END
 
 

@@ -11,18 +11,21 @@ GO
 CREATE PROCEDURE insertInvoice @NIF INT, @name NVARCHAR(128), @address NVARCHAR(128)
 AS
 BEGIN
-    --Check if Contributor exists and update it if fields are not null, if not then create it
-    SELECT * INTO #Temp FROM Contributor c WHERE NIF = @NIF
-    IF (@@ROWCOUNT = 0)
-        INSERT INTO Contributor VALUES (@NIF, @name, @address)
-    ELSE
-        UPDATE Contributor
-        SET name    = ISNULL(@name, (SELECT name FROM #Temp)),
-            address = ISNULL(@address, (SELECT address FROM #Temp))
-        WHERE NIF = @NIF
+    SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+    BEGIN TRAN
+        --Check if Contributor exists and update it if fields are not null, if not then create it
+        SELECT * INTO #Temp FROM Contributor c WHERE NIF = @NIF
+        IF (@@ROWCOUNT = 0)
+            INSERT INTO Contributor VALUES (@NIF, @name, @address)
+        ELSE
+            UPDATE Contributor
+            SET name    = ISNULL(@name, (SELECT name FROM #Temp)),
+                address = ISNULL(@address, (SELECT address FROM #Temp))
+            WHERE NIF = @NIF
 
-    --Create Invoice
-    DECLARE @code VARCHAR(MAX)
-    EXEC @code = nextCode 'invoice'
-    INSERT INTO Invoice VALUES (@code, @NIF, 'updating', 0, 0, GETDATE(), NULL)
+        --Create Invoice
+        DECLARE @code VARCHAR(MAX)
+        EXEC @code = nextCode 'invoice'
+        INSERT INTO Invoice VALUES (@code, @NIF, 'updating', 0, 0, GETDATE(), NULL)
+    COMMIT
 END
