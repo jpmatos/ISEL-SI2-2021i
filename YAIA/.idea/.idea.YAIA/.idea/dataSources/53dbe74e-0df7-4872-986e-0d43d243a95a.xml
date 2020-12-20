@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.19">
+    <root id="1">
+      <ServerVersion>15.0.4073</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="AP4">
+      <ObjectId>8</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="SI2_2021_SI_aula1_revisoes">
+      <ObjectId>5</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="SI2_Grupo02_2021i">
+      <ObjectId>7</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@cigala</Fingerprint>
+    </database>
+    <database id="5" parent="1" name="ap1">
+      <ObjectId>6</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Current>1</Current>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@cigala</Fingerprint>
+    </database>
+    <database id="7" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <schema id="10" parent="4" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="11" parent="4" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="12" parent="4" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="13" parent="4" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="14" parent="4" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="15" parent="4" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="16" parent="4" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="17" parent="4" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="18" parent="4" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="19" parent="4" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="20" parent="4" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2020-12-17.14:48:33.580</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="21" parent="4" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="22" parent="4" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table-type id="23" parent="20" name="CodesListType">
+      <ObjectId>1269579561</ObjectId>
+      <CreatedTimestamp>2020-11-24.02:45:28.027</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-24.02:45:28.027</ModifiedTimestamp>
+      <TypeId>259</TypeId>
+    </table-type>
+    <table-type id="24" parent="20" name="ItemListType">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2020-11-24.02:45:06.010</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-24.02:45:06.010</ModifiedTimestamp>
+      <TypeId>257</TypeId>
+    </table-type>
+    <table-type id="25" parent="20" name="ItemToAddListType">
+      <ObjectId>1237579447</ObjectId>
+      <CreatedTimestamp>2020-11-24.02:45:16.887</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-24.02:45:16.887</ModifiedTimestamp>
+      <TypeId>258</TypeId>
+    </table-type>
+    <table id="26" parent="20" name="Contributor">
+      <ObjectId>1362103893</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.223</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.230</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="20" name="CreditNote">
+      <ObjectId>1570104634</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.267</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.280</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="20" name="CreditNoteState">
+      <ObjectId>1330103779</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.217</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.267</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="20" name="Invoice">
+      <ObjectId>1394104007</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.227</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:37.190</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="20" name="InvoiceHistory">
+      <ObjectId>1698105090</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.290</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.300</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="20" name="InvoiceState">
+      <ObjectId>1298103665</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.213</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.230</ModifiedTimestamp>
+    </table>
+    <table id="32" parent="20" name="Item">
+      <ObjectId>1506104406</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.250</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:37.447</ModifiedTimestamp>
+    </table>
+    <table id="33" parent="20" name="ItemCredit">
+      <ObjectId>1634104862</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.280</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.280</ModifiedTimestamp>
+    </table>
+    <table id="34" parent="20" name="ItemHistory">
+      <ObjectId>1746105261</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.297</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.297</ModifiedTimestamp>
+    </table>
+    <table id="35" parent="20" name="Product">
+      <ObjectId>1458104235</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.240</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.250</ModifiedTimestamp>
+    </table>
+    <view id="36" parent="20" name="InvoiceContributor">
+      <ObjectId>2034106287</ObjectId>
+      <SourceTextLength>260</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:53.560</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:53.560</ModifiedTimestamp>
+    </view>
+    <routine id="37" parent="20" name="deleteProduct">
+      <ObjectId>1874105717</ObjectId>
+      <SourceTextLength>363</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:14:59.970</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:59.970</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="38" parent="20" name="insertCreditNote">
+      <ObjectId>1922105888</ObjectId>
+      <SourceTextLength>1755</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:24.943</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:24.943</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="39" parent="20" name="insertInvoice">
+      <ObjectId>1906105831</ObjectId>
+      <SourceTextLength>829</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:18.737</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:18.737</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="40" parent="20" name="insertItemToInvoice">
+      <ObjectId>1938105945</ObjectId>
+      <SourceTextLength>850</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:31.340</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:31.340</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="41" parent="20" name="insertProduct">
+      <ObjectId>1842105603</ObjectId>
+      <SourceTextLength>234</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:14:59.617</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:59.617</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="42" parent="20" name="nextCode">
+      <ObjectId>1890105774</ObjectId>
+      <SourceTextLength>673</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:05.987</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:05.987</ModifiedTimestamp>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="43" parent="20" name="updateCreditNoteState">
+      <ObjectId>2018106230</ObjectId>
+      <SourceTextLength>695</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:48.280</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:48.280</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="44" parent="20" name="updateInvoiceState">
+      <ObjectId>2002106173</ObjectId>
+      <SourceTextLength>1031</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:48.150</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:48.150</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="45" parent="20" name="updateInvoiceValue">
+      <ObjectId>1954106002</ObjectId>
+      <SourceTextLength>993</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:37.257</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:37.257</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="46" parent="20" name="updateProduct">
+      <ObjectId>1858105660</ObjectId>
+      <SourceTextLength>832</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:14:59.800</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:59.800</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="47" parent="20" name="viewCreditNoteYear">
+      <ObjectId>1986106116</ObjectId>
+      <SourceTextLength>216</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:42.680</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:42.680</ModifiedTimestamp>
+      <RoutineType>tab-fun</RoutineType>
+    </routine>
+    <column id="48" parent="23" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+    </column>
+    <column id="49" parent="24" name="SKU">
+      <Position>1</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+    </column>
+    <column id="50" parent="24" name="quantity">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="51" parent="25" name="SKU">
+      <Position>1</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+    </column>
+    <column id="52" parent="25" name="units">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="53" parent="25" name="discount">
+      <Position>3</Position>
+      <DataType>decimal(9,2)|0s</DataType>
+    </column>
+    <column id="54" parent="25" name="description">
+      <Position>4</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <column id="55" parent="26" name="NIF">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="26" name="name">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <column id="57" parent="26" name="address">
+      <Position>3</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <index id="58" parent="26" name="PK__Contribu__C7DEC3316C1C76D9">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NIF</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="26" name="PK__Contribu__C7DEC3316C1C76D9">
+      <ObjectId>1378103950</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.223</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.223</ModifiedTimestamp>
+      <ColNames>NIF</ColNames>
+      <UnderlyingIndexName>PK__Contribu__C7DEC3316C1C76D9</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="60" parent="27" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="27" name="codeInvoice">
+      <Position>2</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="27" name="state">
+      <Position>3</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="27" name="total_value">
+      <Position>4</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="27" name="total_IVA">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="27" name="creation_date">
+      <Position>6</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="27" name="emission_date">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <index id="67" parent="27" name="PK__CreditNo__357D4CF88379936A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>code</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="68" parent="27" name="PK__CreditNo__357D4CF88379936A">
+      <ObjectId>1586104691</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.267</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.267</ModifiedTimestamp>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>PK__CreditNo__357D4CF88379936A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="69" parent="27" name="FK__CreditNot__codeI__5F7E2DAC">
+      <ObjectId>1602104748</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.267</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.267</ModifiedTimestamp>
+      <ColNames>codeInvoice</ColNames>
+      <RefTableId>1394104007</RefTableId>
+      <RefTableName>Invoice</RefTableName>
+      <RefKeyName>PK__Invoice__357D4CF8CB130522</RefKeyName>
+      <RefColNames>code</RefColNames>
+    </foreign-key>
+    <foreign-key id="70" parent="27" name="FK__CreditNot__state__607251E5">
+      <ObjectId>1618104805</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.267</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.267</ModifiedTimestamp>
+      <ColNames>state</ColNames>
+      <RefTableId>1330103779</RefTableId>
+      <RefTableName>CreditNoteState</RefTableName>
+      <RefKeyName>PK__CreditNo__A9360BC2C9955AE5</RefKeyName>
+      <RefColNames>state</RefColNames>
+    </foreign-key>
+    <column id="71" parent="28" name="state">
+      <Position>1</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="72" parent="28" name="PK__CreditNo__A9360BC2C9955AE5">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>state</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="73" parent="28" name="PK__CreditNo__A9360BC2C9955AE5">
+      <ObjectId>1346103836</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.220</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.220</ModifiedTimestamp>
+      <ColNames>state</ColNames>
+      <UnderlyingIndexName>PK__CreditNo__A9360BC2C9955AE5</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="74" parent="29" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="29" name="NIF">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="29" name="state">
+      <Position>3</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="29" name="total_value">
+      <Position>4</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="78" parent="29" name="total_IVA">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="79" parent="29" name="creation_date">
+      <Position>6</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="29" name="emission_date">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <index id="81" parent="29" name="PK__Invoice__357D4CF8CB130522">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>code</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="82" parent="29" name="PK__Invoice__357D4CF8CB130522">
+      <ObjectId>1410104064</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.230</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.230</ModifiedTimestamp>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>PK__Invoice__357D4CF8CB130522</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="83" parent="29" name="FK__Invoice__NIF__55009F39">
+      <ObjectId>1426104121</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.230</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.230</ModifiedTimestamp>
+      <ColNames>NIF</ColNames>
+      <RefTableId>1362103893</RefTableId>
+      <RefTableName>Contributor</RefTableName>
+      <RefKeyName>PK__Contribu__C7DEC3316C1C76D9</RefKeyName>
+      <RefColNames>NIF</RefColNames>
+    </foreign-key>
+    <foreign-key id="84" parent="29" name="FK__Invoice__state__55F4C372">
+      <ObjectId>1442104178</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.230</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.230</ModifiedTimestamp>
+      <ColNames>state</ColNames>
+      <RefTableId>1298103665</RefTableId>
+      <RefTableName>InvoiceState</RefTableName>
+      <RefKeyName>PK__InvoiceS__A9360BC2477E9F04</RefKeyName>
+      <RefColNames>state</RefColNames>
+    </foreign-key>
+    <trigger id="85" parent="29" name="trackInvoiceHistory">
+      <ObjectId>1794105432</ObjectId>
+      <SourceTextLength>541</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:14:36.710</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:36.710</ModifiedTimestamp>
+      <Events>IU</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <trigger id="86" parent="29" name="stopInvoiceDeletion">
+      <ObjectId>1826105546</ObjectId>
+      <SourceTextLength>411</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:14:37.190</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:37.190</ModifiedTimestamp>
+      <Events>D</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <column id="87" parent="30" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="30" name="alteration_date">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="30" name="NIF">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="90" parent="30" name="state">
+      <Position>4</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+    </column>
+    <column id="91" parent="30" name="total_value">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="92" parent="30" name="total_IVA">
+      <Position>6</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="93" parent="30" name="creation_date">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="94" parent="30" name="emission_date">
+      <Position>8</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <index id="95" parent="30" name="invoice_history_id">
+      <Position>1</Position>
+      <ColNames>code
+alteration_date</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="96" parent="30" name="invoice_history_id">
+      <ObjectId>1714105147</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.293</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.293</ModifiedTimestamp>
+      <ColNames>code
+alteration_date</ColNames>
+      <UnderlyingIndexName>invoice_history_id</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="97" parent="30" name="FK__InvoiceHis__code__671F4F74">
+      <ObjectId>1730105204</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.293</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.293</ModifiedTimestamp>
+      <ColNames>code</ColNames>
+      <RefTableId>1394104007</RefTableId>
+      <RefTableName>Invoice</RefTableName>
+      <RefKeyName>PK__Invoice__357D4CF8CB130522</RefKeyName>
+      <RefColNames>code</RefColNames>
+    </foreign-key>
+    <column id="98" parent="31" name="state">
+      <Position>1</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="99" parent="31" name="PK__InvoiceS__A9360BC2477E9F04">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>state</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="100" parent="31" name="PK__InvoiceS__A9360BC2477E9F04">
+      <ObjectId>1314103722</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.213</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.213</ModifiedTimestamp>
+      <ColNames>state</ColNames>
+      <UnderlyingIndexName>PK__InvoiceS__A9360BC2477E9F04</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="101" parent="32" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="32" name="SKU">
+      <Position>2</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="103" parent="32" name="sale_price">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="32" name="IVA">
+      <Position>4</Position>
+      <DataType>decimal(3,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="32" name="units">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="32" name="discount">
+      <Position>6</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="107" parent="32" name="description">
+      <Position>7</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <index id="108" parent="32" name="number">
+      <Position>1</Position>
+      <ColNames>code
+SKU</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="109" parent="32" name="number">
+      <ObjectId>1522104463</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.250</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.250</ModifiedTimestamp>
+      <ColNames>code
+SKU</ColNames>
+      <UnderlyingIndexName>number</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="110" parent="32" name="FK__Item__code__5BAD9CC8">
+      <ObjectId>1538104520</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.250</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.250</ModifiedTimestamp>
+      <ColNames>code</ColNames>
+      <RefTableId>1394104007</RefTableId>
+      <RefTableName>Invoice</RefTableName>
+      <RefKeyName>PK__Invoice__357D4CF8CB130522</RefKeyName>
+      <RefColNames>code</RefColNames>
+    </foreign-key>
+    <foreign-key id="111" parent="32" name="FK__Item__SKU__5CA1C101">
+      <ObjectId>1554104577</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.250</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.250</ModifiedTimestamp>
+      <ColNames>SKU</ColNames>
+      <RefTableId>1458104235</RefTableId>
+      <RefTableName>Product</RefTableName>
+      <RefKeyName>PK__Product__CA1ECF0C2CC9A3FD</RefKeyName>
+      <RefColNames>SKU</RefColNames>
+    </foreign-key>
+    <trigger id="112" parent="32" name="trackItemHistory">
+      <ObjectId>1810105489</ObjectId>
+      <SourceTextLength>1428</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:14:37</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:37</ModifiedTimestamp>
+      <Events>IU</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <trigger id="113" parent="32" name="updateInvoiceValueItem">
+      <ObjectId>1970106059</ObjectId>
+      <SourceTextLength>316</SourceTextLength>
+      <CreatedTimestamp>2020-12-03.14:15:37.447</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:15:37.447</ModifiedTimestamp>
+      <Events>IUD</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="114" parent="33" name="credit_code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="33" name="invoice_code">
+      <Position>2</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="33" name="SKU">
+      <Position>3</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="33" name="quantity">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="118" parent="33" name="item_credit_id">
+      <Position>1</Position>
+      <ColNames>credit_code
+invoice_code
+SKU</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="119" parent="33" name="item_credit_id">
+      <ObjectId>1650104919</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.280</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.280</ModifiedTimestamp>
+      <ColNames>credit_code
+invoice_code
+SKU</ColNames>
+      <UnderlyingIndexName>item_credit_id</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="120" parent="33" name="FK__ItemCredi__credi__634EBE90">
+      <ObjectId>1666104976</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.280</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.280</ModifiedTimestamp>
+      <ColNames>credit_code</ColNames>
+      <RefTableId>1570104634</RefTableId>
+      <RefTableName>CreditNote</RefTableName>
+      <RefKeyName>PK__CreditNo__357D4CF88379936A</RefKeyName>
+      <RefColNames>code</RefColNames>
+    </foreign-key>
+    <foreign-key id="121" parent="33" name="FK__ItemCredit__6442E2C9">
+      <ObjectId>1682105033</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.280</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.280</ModifiedTimestamp>
+      <ColNames>invoice_code
+SKU</ColNames>
+      <RefTableId>1506104406</RefTableId>
+      <RefTableName>Item</RefTableName>
+      <RefKeyName>number</RefKeyName>
+      <RefColNames>code
+SKU</RefColNames>
+    </foreign-key>
+    <column id="122" parent="34" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="34" name="alteration_date">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="34" name="SKU">
+      <Position>3</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="34" name="sale_price">
+      <Position>4</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="126" parent="34" name="IVA">
+      <Position>5</Position>
+      <DataType>decimal(3,2)|0s</DataType>
+    </column>
+    <column id="127" parent="34" name="units">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="128" parent="34" name="discount">
+      <Position>7</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="129" parent="34" name="description">
+      <Position>8</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <index id="130" parent="34" name="item_history_id">
+      <Position>1</Position>
+      <ColNames>code
+alteration_date
+SKU</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="131" parent="34" name="item_history_id">
+      <ObjectId>1762105318</ObjectId>
+      <CreatedTimestamp>2020-12-03.14:14:18.297</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.297</ModifiedTimestamp>
+      <ColNames>code
+alteration_date
+SKU</ColNames>
+      <UnderlyingIndexName>item_history_id</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="132" parent="34" name="FK__ItemHistory__69FBBC1F">
+      <ObjectId>1778105375</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.297</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.297</ModifiedTimestamp>
+      <ColNames>code
+alteration_date</ColNames>
+      <RefTableId>1698105090</RefTableId>
+      <RefTableName>InvoiceHistory</RefTableName>
+      <RefKeyName>invoice_history_id</RefKeyName>
+      <RefColNames>code
+alteration_date</RefColNames>
+    </foreign-key>
+    <column id="133" parent="35" name="SKU">
+      <Position>1</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="35" name="sale_price">
+      <Position>2</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="135" parent="35" name="IVA">
+      <Position>3</Position>
+      <DataType>decimal(3,2)|0s</DataType>
+    </column>
+    <column id="136" parent="35" name="description">
+      <Position>4</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <index id="137" parent="35" name="PK__Product__CA1ECF0C2CC9A3FD">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SKU</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="138" parent="35" name="PK__Product__CA1ECF0C2CC9A3FD">
+      <ObjectId>1474104292</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.240</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.240</ModifiedTimestamp>
+      <ColNames>SKU</ColNames>
+      <UnderlyingIndexName>PK__Product__CA1ECF0C2CC9A3FD</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="139" parent="35" name="CK__Product__IVA__58D1301D">
+      <ObjectId>1490104349</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-12-03.14:14:18.240</CreatedTimestamp>
+      <ModifiedTimestamp>2020-12-03.14:14:18.240</ModifiedTimestamp>
+      <ColNames>IVA</ColNames>
+      <Predicate>[IVA]&gt;=0 AND [IVA]&lt;=1</Predicate>
+    </check>
+    <column id="140" parent="36" name="NIF">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="141" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <column id="142" parent="36" name="address">
+      <Position>3</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <column id="143" parent="36" name="code">
+      <Position>4</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="144" parent="36" name="state">
+      <Position>5</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="145" parent="36" name="total_value">
+      <Position>6</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="146" parent="36" name="total_IVA">
+      <Position>7</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="147" parent="36" name="creation_date">
+      <Position>8</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="148" parent="36" name="emission_date">
+      <Position>9</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <argument id="149" parent="37" name="@SKU">
+      <Position>1</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+    </argument>
+    <argument id="150" parent="38" name="@invoice">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+    </argument>
+    <argument id="151" parent="38" name="@itemList">
+      <Position>2</Position>
+      <DataType>ItemListType|0s</DataType>
+    </argument>
+    <argument id="152" parent="39" name="@NIF">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="153" parent="39" name="@name">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </argument>
+    <argument id="154" parent="39" name="@address">
+      <Position>3</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </argument>
+    <argument id="155" parent="40" name="@invoice">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+    </argument>
+    <argument id="156" parent="40" name="@itemToAdd">
+      <Position>2</Position>
+      <DataType>ItemToAddListType|0s</DataType>
+    </argument>
+    <argument id="157" parent="41" name="@SKU">
+      <Position>1</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+    </argument>
+    <argument id="158" parent="41" name="@sale_price">
+      <Position>2</Position>
+      <DataType>money|0s</DataType>
+    </argument>
+    <argument id="159" parent="41" name="@IVA">
+      <Position>3</Position>
+      <DataType>decimal(3,2)|0s</DataType>
+    </argument>
+    <argument id="160" parent="41" name="@description">
+      <Position>4</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </argument>
+    <argument id="161" parent="42">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>varchar(max)|0s</DataType>
+    </argument>
+    <argument id="162" parent="42" name="@codeType">
+      <Position>1</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+    </argument>
+    <argument id="163" parent="43" name="@code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+    </argument>
+    <argument id="164" parent="43" name="@state">
+      <Position>2</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+    </argument>
+    <argument id="165" parent="44" name="@code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+    </argument>
+    <argument id="166" parent="44" name="@state">
+      <Position>2</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+    </argument>
+    <argument id="167" parent="45" name="@codes">
+      <Position>1</Position>
+      <DataType>CodesListType|0s</DataType>
+    </argument>
+    <argument id="168" parent="46" name="@SKU">
+      <Position>1</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+    </argument>
+    <argument id="169" parent="46" name="@sale_price">
+      <Position>2</Position>
+      <DataType>money|0s</DataType>
+    </argument>
+    <argument id="170" parent="46" name="@IVA">
+      <Position>3</Position>
+      <DataType>decimal(3,2)|0s</DataType>
+    </argument>
+    <argument id="171" parent="46" name="@description">
+      <Position>4</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </argument>
+    <argument id="172" parent="47" name="@year">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <column id="173" parent="47" name="code">
+      <Position>1</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="174" parent="47" name="codeInvoice">
+      <Position>2</Position>
+      <DataType>nvarchar(12 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="175" parent="47" name="state">
+      <Position>3</Position>
+      <DataType>nvarchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="176" parent="47" name="total_value">
+      <Position>4</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="177" parent="47" name="total_IVA">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="178" parent="47" name="creation_date">
+      <Position>6</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="179" parent="47" name="emission_date">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,10 @@
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/bin/Debug/netcoreapp3.1/EFCore.deps.json
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/bin/Debug/netcoreapp3.1/EFCore.runtimeconfig.json
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/bin/Debug/netcoreapp3.1/EFCore.runtimeconfig.dev.json
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/bin/Debug/netcoreapp3.1/EFCore.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/bin/Debug/netcoreapp3.1/EFCore.pdb
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/obj/Debug/netcoreapp3.1/EFCore.csprojAssemblyReference.cache
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/obj/Debug/netcoreapp3.1/EFCore.AssemblyInfoInputs.cache
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/obj/Debug/netcoreapp3.1/EFCore.AssemblyInfo.cs
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/obj/Debug/netcoreapp3.1/EFCore.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/obj/Debug/netcoreapp3.1/EFCore.pdb

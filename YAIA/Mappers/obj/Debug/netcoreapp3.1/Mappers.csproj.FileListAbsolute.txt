@@ -1,0 +1,15 @@
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Mappers.deps.json
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Mappers.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Mappers.pdb
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Connection.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Entities.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/IMappers.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Connection.pdb
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/IMappers.pdb
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/bin/Debug/netcoreapp3.1/Entities.pdb
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/Debug/netcoreapp3.1/Mappers.csprojAssemblyReference.cache
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/Debug/netcoreapp3.1/Mappers.AssemblyInfoInputs.cache
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/Debug/netcoreapp3.1/Mappers.AssemblyInfo.cs
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/Debug/netcoreapp3.1/Mappers.csproj.CopyComplete
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/Debug/netcoreapp3.1/Mappers.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/Debug/netcoreapp3.1/Mappers.pdb
