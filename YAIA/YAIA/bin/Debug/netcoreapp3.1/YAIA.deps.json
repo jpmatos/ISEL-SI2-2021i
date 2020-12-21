@@ -9,7 +9,7 @@
       "YAIA/1.0.0": {
         "dependencies": {
           "EFCore": "1.0.0",
-          "Mappers": "1.0.0",
+          "Mapper": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.1",
           "Microsoft.EntityFrameworkCore.Design": "5.0.1",
@@ -17,7 +17,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "2.0.0-preview1-final",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.1",
-          "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3"
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3",
+          "View": "1.0.0"
         },
         "runtime": {
           "YAIA.dll": {}
@@ -1157,6 +1158,16 @@
           "Connection.dll": {}
         }
       },
+      "Controller/1.0.0": {
+        "dependencies": {
+          "EFCore": "1.0.0",
+          "Entity": "1.0.0",
+          "Mapper": "1.0.0"
+        },
+        "runtime": {
+          "Controller.dll": {}
+        }
+      },
       "EFCore/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.1",
@@ -1170,27 +1181,37 @@
           "EFCore.dll": {}
         }
       },
-      "Entities/1.0.0": {
+      "Entity/1.0.0": {
         "runtime": {
-          "Entities.dll": {}
+          "Entity.dll": {}
         }
       },
-      "IMappers/1.0.0": {
+      "IMapper/1.0.0": {
         "dependencies": {
           "Connection": "1.0.0",
-          "Entities": "1.0.0"
+          "Entity": "1.0.0"
         },
         "runtime": {
-          "IMappers.dll": {}
+          "IMapper.dll": {}
         }
       },
-      "Mappers/1.0.0": {
+      "Mapper/1.0.0": {
         "dependencies": {
           "Connection": "1.0.0",
-          "IMappers": "1.0.0"
+          "IMapper": "1.0.0"
         },
         "runtime": {
-          "Mappers.dll": {}
+          "Mapper.dll": {}
+        }
+      },
+      "View/1.0.0": {
+        "dependencies": {
+          "Controller": "1.0.0",
+          "EFCore": "1.0.0",
+          "Entity": "1.0.0"
+        },
+        "runtime": {
+          "View.dll": {}
         }
       }
     }
@@ -1941,22 +1962,32 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Controller/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Entities/1.0.0": {
+    "Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "IMappers/1.0.0": {
+    "IMapper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Mappers/1.0.0": {
+    "Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "View/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

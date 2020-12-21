@@ -18,8 +18,11 @@
           "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj": {
             "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj"
           },
-          "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj": {
-            "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj"
+          "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj": {
+            "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj"
+          },
+          "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj": {
+            "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj"
           }
         }
       }

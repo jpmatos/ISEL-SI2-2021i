@@ -1759,6 +1759,21 @@
           "bin/placeholder/Connection.dll": {}
         }
       },
+      "Controller/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "EFCore": "1.0.0",
+          "Entity": "1.0.0",
+          "Mapper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Controller.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Controller.dll": {}
+        }
+      },
       "EFCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1777,42 +1792,57 @@
           "bin/placeholder/EFCore.dll": {}
         }
       },
-      "Entities/1.0.0": {
+      "Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/Entities.dll": {}
+          "bin/placeholder/Entity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Entities.dll": {}
+          "bin/placeholder/Entity.dll": {}
         }
       },
-      "IMappers/1.0.0": {
+      "IMapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Connection": "1.0.0",
-          "Entities": "1.0.0"
+          "Entity": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/IMappers.dll": {}
+          "bin/placeholder/IMapper.dll": {}
         },
         "runtime": {
-          "bin/placeholder/IMappers.dll": {}
+          "bin/placeholder/IMapper.dll": {}
         }
       },
-      "Mappers/1.0.0": {
+      "Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Connection": "1.0.0",
-          "IMappers": "1.0.0"
+          "IMapper": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Mappers.dll": {}
+          "bin/placeholder/Mapper.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Mappers.dll": {}
+          "bin/placeholder/Mapper.dll": {}
+        }
+      },
+      "View/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Controller": "1.0.0",
+          "EFCore": "1.0.0",
+          "Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/View.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/View.dll": {}
         }
       }
     }
@@ -6585,31 +6615,41 @@
       "path": "../Connection/Connection.csproj",
       "msbuildProject": "../Connection/Connection.csproj"
     },
+    "Controller/1.0.0": {
+      "type": "project",
+      "path": "../Controller/Controller.csproj",
+      "msbuildProject": "../Controller/Controller.csproj"
+    },
     "EFCore/1.0.0": {
       "type": "project",
       "path": "../EFCore/EFCore.csproj",
       "msbuildProject": "../EFCore/EFCore.csproj"
     },
-    "Entities/1.0.0": {
+    "Entity/1.0.0": {
       "type": "project",
-      "path": "../Entities/Entities.csproj",
-      "msbuildProject": "../Entities/Entities.csproj"
+      "path": "../Entity/Entity.csproj",
+      "msbuildProject": "../Entity/Entity.csproj"
     },
-    "IMappers/1.0.0": {
+    "IMapper/1.0.0": {
       "type": "project",
-      "path": "../IMappers/IMappers.csproj",
-      "msbuildProject": "../IMappers/IMappers.csproj"
+      "path": "../IMapper/IMapper.csproj",
+      "msbuildProject": "../IMapper/IMapper.csproj"
     },
-    "Mappers/1.0.0": {
+    "Mapper/1.0.0": {
       "type": "project",
-      "path": "../Mappers/Mappers.csproj",
-      "msbuildProject": "../Mappers/Mappers.csproj"
+      "path": "../Mapper/Mapper.csproj",
+      "msbuildProject": "../Mapper/Mapper.csproj"
+    },
+    "View/1.0.0": {
+      "type": "project",
+      "path": "../View/View.csproj",
+      "msbuildProject": "../View/View.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "EFCore >= 1.0.0",
-      "Mappers >= 1.0.0",
+      "Mapper >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Abstractions >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.1",
@@ -6617,7 +6657,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 2.0.0-preview1-final",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.1",
-      "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3"
+      "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3",
+      "View >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6647,8 +6688,11 @@
             "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj": {
               "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj"
             },
-            "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj": {
-              "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj"
+            "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj": {
+              "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj"
+            },
+            "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj": {
+              "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj"
             }
           }
         }

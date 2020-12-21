@@ -19,6 +19,23 @@
           </e>
         </e>
       </e>
+      <e p="Controller" t="IncludeRecursive">
+        <e p="ADO" t="Include">
+          <e p="InsertInvoice.cs" t="Include" />
+        </e>
+        <e p="Controller.csproj" t="IncludeRecursive" />
+        <e p="EFCore" t="Include">
+          <e p="InsertInvoice.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Controller.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="EFCore" t="IncludeRecursive">
         <e p="Contributor.cs" t="Include" />
         <e p="CreditNote.cs" t="Include" />
@@ -42,46 +59,70 @@
           </e>
         </e>
       </e>
-      <e p="Entities" t="IncludeRecursive">
+      <e p="Entity" t="IncludeRecursive">
         <e p="Contributor.cs" t="Include" />
-        <e p="Entities.csproj" t="IncludeRecursive" />
+        <e p="Entity.csproj" t="IncludeRecursive" />
+        <e p="Invoice.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="Entities.AssemblyInfo.cs" t="Include" />
+              <e p="Entity.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
-      <e p="IMappers" t="IncludeRecursive">
+      <e p="IMapper" t="IncludeRecursive">
+        <e p="IMapper.csproj" t="IncludeRecursive" />
         <e p="IMapperContributor.cs" t="Include" />
         <e p="IMapperSession.cs" t="Include" />
-        <e p="IMappers.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="IMappers.AssemblyInfo.cs" t="Include" />
+              <e p="IMapper.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
-      <e p="Mappers" t="IncludeRecursive">
+      <e p="Mapper" t="IncludeRecursive">
+        <e p="Mapper.csproj" t="IncludeRecursive" />
         <e p="MapperContributor.cs" t="Include" />
-        <e p="Mappers.csproj" t="IncludeRecursive" />
         <e p="Session.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="Mappers.AssemblyInfo.cs" t="Include" />
+              <e p="Mapper.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="View" t="IncludeRecursive">
+        <e p="ADO" t="Include">
+          <e p="InsertInvoice.cs" t="Include" />
+        </e>
+        <e p="Abstract" t="Include">
+          <e p="AbstractInsertInvoice.cs" t="Include" />
+          <e p="AbstractView.cs" t="Include" />
+        </e>
+        <e p="EFCore" t="Include">
+          <e p="InsertInvoice.cs" t="Include" />
+        </e>
+        <e p="IView.cs" t="Include" />
+        <e p="Parameter.cs" t="Include" />
+        <e p="View.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="View.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
       <e p="YAIA" t="IncludeRecursive">
-        <e p="Context" t="Include" />
+        <e p="App.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="YAIA.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />

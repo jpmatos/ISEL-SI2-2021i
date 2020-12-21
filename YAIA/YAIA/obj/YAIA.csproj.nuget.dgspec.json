@@ -66,6 +66,72 @@
         }
       }
     },
+    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Controller/Controller.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Controller/Controller.csproj",
+        "projectName": "Controller",
+        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Controller/Controller.csproj",
+        "packagesPath": "/home/jpmatos/.nuget/packages/",
+        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Controller/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jpmatos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj"
+              },
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj"
+              },
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -160,14 +226,14 @@
         }
       }
     },
-    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entities/Entities.csproj": {
+    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entities/Entities.csproj",
-        "projectName": "Entities",
-        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entities/Entities.csproj",
+        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj",
+        "projectName": "Entity",
+        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj",
         "packagesPath": "/home/jpmatos/.nuget/packages/",
-        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entities/obj/",
+        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jpmatos/.nuget/NuGet/NuGet.Config"
@@ -216,14 +282,14 @@
         }
       }
     },
-    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMappers/IMappers.csproj": {
+    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMapper/IMapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMappers/IMappers.csproj",
-        "projectName": "IMappers",
-        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMappers/IMappers.csproj",
+        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMapper/IMapper.csproj",
+        "projectName": "IMapper",
+        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMapper/IMapper.csproj",
         "packagesPath": "/home/jpmatos/.nuget/packages/",
-        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMappers/obj/",
+        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMapper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jpmatos/.nuget/NuGet/NuGet.Config"
@@ -240,8 +306,8 @@
               "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Connection/Connection.csproj": {
                 "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Connection/Connection.csproj"
               },
-              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entities/Entities.csproj": {
-                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entities/Entities.csproj"
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj"
               }
             }
           }
@@ -279,14 +345,14 @@
         }
       }
     },
-    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj": {
+    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj",
-        "projectName": "Mappers",
-        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj",
+        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj",
+        "projectName": "Mapper",
+        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj",
         "packagesPath": "/home/jpmatos/.nuget/packages/",
-        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/obj/",
+        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jpmatos/.nuget/NuGet/NuGet.Config"
@@ -303,8 +369,74 @@
               "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Connection/Connection.csproj": {
                 "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Connection/Connection.csproj"
               },
-              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMappers/IMappers.csproj": {
-                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMappers/IMappers.csproj"
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMapper/IMapper.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/IMapper/IMapper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj",
+        "projectName": "View",
+        "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj",
+        "packagesPath": "/home/jpmatos/.nuget/packages/",
+        "outputPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jpmatos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Controller/Controller.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Controller/Controller.csproj"
+              },
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj"
+              },
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/Entity.csproj"
               }
             }
           }
@@ -366,8 +498,11 @@
               "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj": {
                 "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/EFCore/EFCore.csproj"
               },
-              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj": {
-                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mappers/Mappers.csproj"
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Mapper/Mapper.csproj"
+              },
+              "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj": {
+                "projectPath": "/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/View/View.csproj"
               }
             }
           }

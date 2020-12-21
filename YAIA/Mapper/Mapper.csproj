@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Mappers</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Connection\Connection.csproj" />
+      <ProjectReference Include="..\IMapper\IMapper.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/bin/Debug/netcoreapp3.1/Entity.deps.json
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/bin/Debug/netcoreapp3.1/Entity.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/bin/Debug/netcoreapp3.1/Entity.pdb
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/obj/Debug/netcoreapp3.1/Entity.AssemblyInfoInputs.cache
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/obj/Debug/netcoreapp3.1/Entity.AssemblyInfo.cs
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/obj/Debug/netcoreapp3.1/Entity.dll
+/home/jpmatos/Documents/SI2/ISEL-SI2-2021i/YAIA/Entity/obj/Debug/netcoreapp3.1/Entity.pdb
