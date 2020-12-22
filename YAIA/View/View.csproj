@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Entity\Entity.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="5.0.1" />
+    </ItemGroup>
+
 </Project>

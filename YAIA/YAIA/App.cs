@@ -1,39 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using View;
+using View.Util;
 
 namespace YAIA
 { 
     public class App
     {
         
-        private delegate void DBMethod();
-        private Dictionary<Option, DBMethod> __dbMethodsADO; 
-        private Dictionary<Option, DBMethod> __dbMethodsEFCore;    
+        private delegate void DbMethod(DataAccess data);
+        private readonly Dictionary<Option, DbMethod> _dbMethods;  
              
-        private static App __instance;
+        private static App _instance;
         public static App Instance
         {
-            get
-            {
-                if (__instance == null)
-                    __instance = new App();
-                return __instance;
-            }
-            private set { }
+            get => _instance ??= new App();
+            private set => _instance = value;
         }
 
-        private const Framework DefaultData = Framework.ADO;
+        private const DataAccess DefaultData = DataAccess.Ado;
 
-        private Framework Data
+        private DataAccess DataAccess
         {
             get;
             set;
-        }
-
-        private enum Framework
-        {
-            ADO,
-            EFCore
         }
 
         private enum Option
@@ -41,18 +31,16 @@ namespace YAIA
             Unknown = -1,
             Exit,
             InsertInvoice,
+            InsertCreditNote,
             SwitchData
         }
         
         private App()
         {
-            __dbMethodsADO = new Dictionary<Option, DBMethod>();
-            __dbMethodsADO.Add(Option.InsertInvoice, new View.ADO.InsertInvoice().Query);
-            __dbMethodsADO.Add(Option.SwitchData, SwitchData);
-            
-            __dbMethodsEFCore = new Dictionary<Option, DBMethod>();
-            __dbMethodsEFCore.Add(Option.InsertInvoice, new View.EFCore.InsertInvoice().Query);
-            __dbMethodsEFCore.Add(Option.SwitchData, SwitchData);
+            _dbMethods = new Dictionary<Option, DbMethod>();
+            _dbMethods.Add(Option.InsertInvoice, new InsertInvoice().Query);
+            _dbMethods.Add(Option.InsertCreditNote, new InsertCreditNote().Query);
+            _dbMethods.Add(Option.SwitchData, SwitchData);
         }
         
         private Option DisplayMenu()
@@ -62,10 +50,11 @@ namespace YAIA
             {
                 Console.WriteLine("Yet Another Invoice Application");
                 Console.WriteLine("1. Insert Invoice");
-                Console.WriteLine($"2. ---Switch Data--- (Current: {Data})");
+                Console.WriteLine("2. Insert Credit Note");
+                Console.WriteLine($"3. ---Switch Mapper--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
-                option = (Option)Enum.Parse(typeof(Option), result);
+                option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);
             }
             catch (ArgumentException)
             {
@@ -75,23 +64,16 @@ namespace YAIA
             return option;
         }
         
-        private void SwitchData()
+        private void SwitchData(DataAccess _)
         {
-            if (Data == Framework.ADO)
-            {
-                Data = Framework.EFCore;
-            }
-            else
-            {
-                Data = Framework.ADO;
-            }
-            Console.WriteLine($"Switched to {Data}");
+            DataAccess = DataAccess == DataAccess.Ado ? DataAccess.EfCore : DataAccess.Ado;
+            Console.WriteLine($"Switched to {DataAccess.ToString().ToUpper()}");
         }
         
         public void Run()
         {
-            Data = DefaultData;
-            Option userInput = Option.Unknown;
+            DataAccess = DefaultData;
+            Option userInput;
             do
             {
                 Console.Clear();
@@ -99,15 +81,7 @@ namespace YAIA
                 Console.Clear();
                 try
                 {
-                    switch (Data)
-                    {
-                        case Framework.ADO:
-                            __dbMethodsADO[userInput]();
-                            break;
-                        case Framework.EFCore:
-                            __dbMethodsEFCore[userInput]();
-                            break;
-                    }
+                    _dbMethods[userInput](DataAccess);
                     Console.WriteLine("Press Enter to continue...");
                     Console.ReadKey();
                 }

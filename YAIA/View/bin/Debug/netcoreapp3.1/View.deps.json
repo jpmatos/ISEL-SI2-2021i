@@ -10,7 +10,8 @@
         "dependencies": {
           "Controller": "1.0.0",
           "EFCore": "1.0.0",
-          "Entity": "1.0.0"
+          "Entity": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.1"
         },
         "runtime": {
           "View.dll": {}
@@ -1128,7 +1129,8 @@
         "dependencies": {
           "EFCore": "1.0.0",
           "Entity": "1.0.0",
-          "Mapper": "1.0.0"
+          "Mapper": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.1"
         },
         "runtime": {
           "Controller.dll": {}

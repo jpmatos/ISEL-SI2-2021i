@@ -27,99 +27,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a2e580-74db-4730-8bcb-e9b6344ed341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YAIA/App.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Interface/AbstractView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Interface/IView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Util/Parameter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connection/obj/Debug/netcoreapp3.1/Connection.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Connection/obj/Debug/netcoreapp3.1/Connection.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connection/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Connection/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ADO/InsertInvoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ADO/InsertInvoice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Controller.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Controller.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/Controller.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Controller.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EFCore/obj/Debug/netcoreapp3.1/EFCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore/obj/Debug/netcoreapp3.1/EFCore.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Contributor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Contributor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Entities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Entity.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/bin/Debug/netcoreapp3.1/Entities.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entities.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/bin/Debug/netcoreapp3.1/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/bin/Debug/netcoreapp3.1/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Debug/netcoreapp3.1/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Entities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Entities.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Entities.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Entities.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/Entities.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Entities.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/IMapperContributor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/IMapperContributor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/IMapperSession.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/IMapperSession.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/IMappers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/IMapper.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/Connection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Connection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/Connection.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Connection.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/IMappers.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/IMappers.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/IMappers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/IMapper.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/bin/Debug/netcoreapp3.1/IMappers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/IMapper.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.csproj.CopyComplete" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.csproj.CopyComplete" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/Debug/netcoreapp3.1/IMappers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMappers.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/IMappers.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/IMappers.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/IMappers.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/IMappers.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/IMappers.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/IMappers.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMappers/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/MapperContributor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/MapperContributor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/Mappers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/Mapper.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/Session.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/Session.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Connection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Connection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Connection.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Connection.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/IMappers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/IMappers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/IMappers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/IMappers.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Mappers.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Mappers.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Mappers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Mapper.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/bin/Debug/netcoreapp3.1/Mappers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Mapper.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.csproj.CopyComplete" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.csproj.CopyComplete" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Debug/netcoreapp3.1/Mappers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mappers.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Mappers.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Mappers.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Mappers.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Mappers.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/Mappers.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Mappers.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mappers/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA.sln" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMapper.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMapper.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMapper/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mapper.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mapper.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapper/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ADO/InsertInvoice.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Abstract/AbstractInsertInvoice.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Abstract/AbstractView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/EFCore/InsertInvoice.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/IView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Parameter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/View.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/View/View.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/View.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/View.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/App.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/YAIA.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/YAIA.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entities.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/IMappers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/IMappers.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Mappers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Mappers.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.pdb" afterDir="false" />
@@ -147,22 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Mappers/Program.cs" />
-        <option value="$PROJECT_DIR$/IMappers/Program.cs" />
-        <option value="$PROJECT_DIR$/Connection/Program.cs" />
-        <option value="$PROJECT_DIR$/Connection/Class1.cs" />
-        <option value="$PROJECT_DIR$/Entities/Class1.cs" />
-        <option value="$PROJECT_DIR$/Mappers/Class1.cs" />
-        <option value="$PROJECT_DIR$/IMappers/Class1.cs" />
-        <option value="$PROJECT_DIR$/Connection/ISession.cs" />
-        <option value="$PROJECT_DIR$/Connection/IMapper.cs" />
-        <option value="$PROJECT_DIR$/IMappers/IMapperContributor.cs" />
-        <option value="$PROJECT_DIR$/Connection/AbstractSession.cs" />
-        <option value="$PROJECT_DIR$/Mappers/MapperContributor.cs" />
-        <option value="$PROJECT_DIR$/Entities/Contributor.cs" />
-        <option value="$PROJECT_DIR$/EFCore/Class1.cs" />
-        <option value="$PROJECT_DIR$/EFCore/Contributor.cs" />
-        <option value="$PROJECT_DIR$/EFCore/CreditNote.cs" />
         <option value="$PROJECT_DIR$/EFCore/CreditNoteState.cs" />
         <option value="$PROJECT_DIR$/EFCore/Invoice.cs" />
         <option value="$PROJECT_DIR$/EFCore/InvoiceContributor.cs" />
@@ -179,25 +146,41 @@
         <option value="$PROJECT_DIR$/View/Class1.cs" />
         <option value="$PROJECT_DIR$/Mapper/Session.cs" />
         <option value="$PROJECT_DIR$/Mapper/MapperContributor.cs" />
-        <option value="$PROJECT_DIR$/View/InsertInvoice.cs" />
         <option value="$PROJECT_DIR$/View/ADO.cs" />
         <option value="$PROJECT_DIR$/View/Entry.cs" />
         <option value="$PROJECT_DIR$/Entity/Invoice.cs" />
         <option value="$PROJECT_DIR$/Controller/Class1.cs" />
         <option value="$PROJECT_DIR$/Controller/AbstractController.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/53dbe74e-0df7-4872-986e-0d43d243a95a/console.sql" />
-        <option value="$PROJECT_DIR$/View/Parameter.cs" />
         <option value="$PROJECT_DIR$/View/AbstractView.cs" />
         <option value="$PROJECT_DIR$/View/AbstractInsertInvoice.cs" />
         <option value="$PROJECT_DIR$/View/IView.cs" />
         <option value="$PROJECT_DIR$/View/Abstract.cs" />
-        <option value="$PROJECT_DIR$/View/Abstract/AbstractView.cs" />
-        <option value="$PROJECT_DIR$/View/ADO/InsertInvoice.cs" />
-        <option value="$PROJECT_DIR$/View/Abstract/AbstractInsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/View/EFCore/InsertCreditNote.cs" />
+        <option value="$PROJECT_DIR$/View/Parameter.cs" />
+        <option value="$PROJECT_DIR$/View/ADO/InsertCreditNote.cs" />
         <option value="$PROJECT_DIR$/Controller/ADO/InsertInvoice.cs" />
-        <option value="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/View/Util/Framework.cs" />
         <option value="$PROJECT_DIR$/View/EFCore/InsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/View/ADO/InsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/View/Abstract/AbstractView.cs" />
+        <option value="$PROJECT_DIR$/View/Abstract/AbstractInsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/View/Abstract/AbstractInsertCreditNote.cs" />
+        <option value="$PROJECT_DIR$/View/Util/Mapper.cs" />
+        <option value="$PROJECT_DIR$/View/Util/Parameter.cs" />
+        <option value="$PROJECT_DIR$/View/Util/IView.cs" />
+        <option value="$PROJECT_DIR$/View/Util/AbstractView.cs" />
+        <option value="$PROJECT_DIR$/View/Interface/IView.cs" />
+        <option value="$PROJECT_DIR$/Entity/TableTypes/ItemListType.cs" />
+        <option value="$PROJECT_DIR$/View/Interface/AbstractView.cs" />
+        <option value="$PROJECT_DIR$/Entity/TableTypes/ItemList.cs" />
+        <option value="$PROJECT_DIR$/View/InsertInvoice.cs" />
         <option value="$PROJECT_DIR$/YAIA/App.cs" />
+        <option value="$PROJECT_DIR$/../SQL/Exercises/m-tests.sql" />
+        <option value="$PROJECT_DIR$/Controller/ADO/InsertCreditNote.cs" />
+        <option value="$PROJECT_DIR$/Controller/EFCore/InsertCreditNote.cs" />
+        <option value="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/View/InsertCreditNote.cs" />
       </list>
     </option>
   </component>
@@ -330,7 +313,9 @@
       <workItem from="1608399054512" duration="15948000" />
       <workItem from="1608560809087" duration="1891000" />
       <workItem from="1608562746294" duration="621000" />
-      <workItem from="1608563377148" duration="15520000" />
+      <workItem from="1608563377148" duration="15596000" />
+      <workItem from="1608638700893" duration="7026000" />
+      <workItem from="1608648008861" duration="8205000" />
     </task>
     <servers />
   </component>
@@ -375,90 +360,90 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="424" height="464" key="DebuggerActiveHint/0.0.1600.900@0.0.1600.900" timestamp="1608575250594" />
-    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl" timestamp="1608573504404">
+    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl" timestamp="1608646860170">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1608573504404" />
-    <state width="1558" height="172" key="GridCell.Tab.0.bottom" timestamp="1608581507692">
+    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1608646860170" />
+    <state width="1558" height="172" key="GridCell.Tab.0.bottom" timestamp="1608663833889">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608581507692" />
-    <state width="1558" height="172" key="GridCell.Tab.0.center" timestamp="1608581507691">
+    <state width="1558" height="172" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608663833889" />
+    <state width="1558" height="172" key="GridCell.Tab.0.center" timestamp="1608663833888">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1608581507691" />
-    <state width="1558" height="172" key="GridCell.Tab.0.left" timestamp="1608581507690">
+    <state width="1558" height="172" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1608663833887" />
+    <state width="1558" height="172" key="GridCell.Tab.0.left" timestamp="1608663833886">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1608581507690" />
-    <state width="1558" height="172" key="GridCell.Tab.0.right" timestamp="1608581507692">
+    <state width="1558" height="172" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1608663833886" />
+    <state width="1558" height="172" key="GridCell.Tab.0.right" timestamp="1608663833888">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1608581507692" />
-    <state width="1558" height="263" key="GridCell.Tab.1.bottom" timestamp="1608581484941">
+    <state width="1558" height="172" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1608663833888" />
+    <state width="1558" height="311" key="GridCell.Tab.1.bottom" timestamp="1608663270452">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608581484941" />
-    <state width="1558" height="263" key="GridCell.Tab.1.center" timestamp="1608581484941">
+    <state width="1558" height="311" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608663270452" />
+    <state width="1558" height="311" key="GridCell.Tab.1.center" timestamp="1608663270451">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1608581484941" />
-    <state width="1558" height="263" key="GridCell.Tab.1.left" timestamp="1608581484940">
+    <state width="1558" height="311" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1608663270451" />
+    <state width="1558" height="311" key="GridCell.Tab.1.left" timestamp="1608663270451">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1608581484940" />
-    <state width="1558" height="263" key="GridCell.Tab.1.right" timestamp="1608581484941">
+    <state width="1558" height="311" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1608663270451" />
+    <state width="1558" height="311" key="GridCell.Tab.1.right" timestamp="1608663270451">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1608581484941" />
-    <state width="1558" height="263" key="GridCell.Tab.2.bottom" timestamp="1608581484942">
+    <state width="1558" height="311" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1608663270451" />
+    <state width="1558" height="311" key="GridCell.Tab.2.bottom" timestamp="1608663270452">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.2.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608581484942" />
-    <state width="1558" height="263" key="GridCell.Tab.2.center" timestamp="1608581484941">
+    <state width="1558" height="311" key="GridCell.Tab.2.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608663270452" />
+    <state width="1558" height="311" key="GridCell.Tab.2.center" timestamp="1608663270452">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.2.center/0.0.1600.900@0.0.1600.900" timestamp="1608581484941" />
-    <state width="1558" height="263" key="GridCell.Tab.2.left" timestamp="1608581484941">
+    <state width="1558" height="311" key="GridCell.Tab.2.center/0.0.1600.900@0.0.1600.900" timestamp="1608663270452" />
+    <state width="1558" height="311" key="GridCell.Tab.2.left" timestamp="1608663270452">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.2.left/0.0.1600.900@0.0.1600.900" timestamp="1608581484941" />
-    <state width="1558" height="263" key="GridCell.Tab.2.right" timestamp="1608581484942">
+    <state width="1558" height="311" key="GridCell.Tab.2.left/0.0.1600.900@0.0.1600.900" timestamp="1608663270452" />
+    <state width="1558" height="311" key="GridCell.Tab.2.right" timestamp="1608663270452">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1608581484942" />
-    <state width="1558" height="263" key="GridCell.Tab.3.bottom" timestamp="1608581484943">
+    <state width="1558" height="311" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1608663270452" />
+    <state width="1558" height="311" key="GridCell.Tab.3.bottom" timestamp="1608663270453">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.3.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608581484943" />
-    <state width="1558" height="263" key="GridCell.Tab.3.center" timestamp="1608581484942">
+    <state width="1558" height="311" key="GridCell.Tab.3.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608663270453" />
+    <state width="1558" height="311" key="GridCell.Tab.3.center" timestamp="1608663270453">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.3.center/0.0.1600.900@0.0.1600.900" timestamp="1608581484942" />
-    <state width="1558" height="263" key="GridCell.Tab.3.left" timestamp="1608581484942">
+    <state width="1558" height="311" key="GridCell.Tab.3.center/0.0.1600.900@0.0.1600.900" timestamp="1608663270453" />
+    <state width="1558" height="311" key="GridCell.Tab.3.left" timestamp="1608663270452">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.3.left/0.0.1600.900@0.0.1600.900" timestamp="1608581484942" />
-    <state width="1558" height="263" key="GridCell.Tab.3.right" timestamp="1608581484942">
+    <state width="1558" height="311" key="GridCell.Tab.3.left/0.0.1600.900@0.0.1600.900" timestamp="1608663270452" />
+    <state width="1558" height="311" key="GridCell.Tab.3.right" timestamp="1608663270453">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.3.right/0.0.1600.900@0.0.1600.900" timestamp="1608581484942" />
-    <state width="1558" height="263" key="GridCell.Tab.4.bottom" timestamp="1608581484943">
+    <state width="1558" height="311" key="GridCell.Tab.3.right/0.0.1600.900@0.0.1600.900" timestamp="1608663270453" />
+    <state width="1558" height="311" key="GridCell.Tab.4.bottom" timestamp="1608663270454">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.4.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608581484943" />
-    <state width="1558" height="263" key="GridCell.Tab.4.center" timestamp="1608581484943">
+    <state width="1558" height="311" key="GridCell.Tab.4.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608663270454" />
+    <state width="1558" height="311" key="GridCell.Tab.4.center" timestamp="1608663270453">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.4.center/0.0.1600.900@0.0.1600.900" timestamp="1608581484943" />
-    <state width="1558" height="263" key="GridCell.Tab.4.left" timestamp="1608581484943">
+    <state width="1558" height="311" key="GridCell.Tab.4.center/0.0.1600.900@0.0.1600.900" timestamp="1608663270453" />
+    <state width="1558" height="311" key="GridCell.Tab.4.left" timestamp="1608663270453">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.4.left/0.0.1600.900@0.0.1600.900" timestamp="1608581484943" />
-    <state width="1558" height="263" key="GridCell.Tab.4.right" timestamp="1608581484943">
+    <state width="1558" height="311" key="GridCell.Tab.4.left/0.0.1600.900@0.0.1600.900" timestamp="1608663270453" />
+    <state width="1558" height="311" key="GridCell.Tab.4.right" timestamp="1608663270454">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="263" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1608581484943" />
+    <state width="1558" height="311" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1608663270454" />
     <state x="395" y="171" width="806" height="528" key="Rider.ProjectTemplateDialog.Size" timestamp="1608569640160">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

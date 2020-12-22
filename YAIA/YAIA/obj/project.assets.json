@@ -1765,7 +1765,8 @@
         "dependencies": {
           "EFCore": "1.0.0",
           "Entity": "1.0.0",
-          "Mapper": "1.0.0"
+          "Mapper": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.1"
         },
         "compile": {
           "bin/placeholder/Controller.dll": {}
@@ -1836,7 +1837,8 @@
         "dependencies": {
           "Controller": "1.0.0",
           "EFCore": "1.0.0",
-          "Entity": "1.0.0"
+          "Entity": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.1"
         },
         "compile": {
           "bin/placeholder/View.dll": {}
@@ -6652,6 +6654,7 @@
       "Mapper >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Abstractions >= 5.0.1",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
@@ -6711,6 +6714,10 @@
             "version": "[5.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
             "target": "Package",
             "version": "[5.0.1, )"
           },

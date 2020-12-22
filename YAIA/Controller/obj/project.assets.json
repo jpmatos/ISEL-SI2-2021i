@@ -6516,7 +6516,8 @@
     ".NETCoreApp,Version=v3.1": [
       "EFCore >= 1.0.0",
       "Entity >= 1.0.0",
-      "Mapper >= 1.0.0"
+      "Mapper >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 5.0.1"
     ]
   },
   "packageFolders": {
@@ -6563,6 +6564,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

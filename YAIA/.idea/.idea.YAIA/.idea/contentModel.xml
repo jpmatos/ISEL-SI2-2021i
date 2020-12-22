@@ -21,10 +21,12 @@
       </e>
       <e p="Controller" t="IncludeRecursive">
         <e p="ADO" t="Include">
+          <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
         </e>
         <e p="Controller.csproj" t="IncludeRecursive" />
         <e p="EFCore" t="Include">
+          <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
@@ -63,6 +65,9 @@
         <e p="Contributor.cs" t="Include" />
         <e p="Entity.csproj" t="IncludeRecursive" />
         <e p="Invoice.cs" t="Include" />
+        <e p="TableTypes" t="Include">
+          <e p="ItemList.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -99,18 +104,16 @@
         </e>
       </e>
       <e p="View" t="IncludeRecursive">
-        <e p="ADO" t="Include">
-          <e p="InsertInvoice.cs" t="Include" />
-        </e>
-        <e p="Abstract" t="Include">
-          <e p="AbstractInsertInvoice.cs" t="Include" />
+        <e p="InsertCreditNote.cs" t="Include" />
+        <e p="InsertInvoice.cs" t="Include" />
+        <e p="Interface" t="Include">
           <e p="AbstractView.cs" t="Include" />
+          <e p="IView.cs" t="Include" />
         </e>
-        <e p="EFCore" t="Include">
-          <e p="InsertInvoice.cs" t="Include" />
+        <e p="Util" t="Include">
+          <e p="DataAccess.cs" t="Include" />
+          <e p="Parameter.cs" t="Include" />
         </e>
-        <e p="IView.cs" t="Include" />
-        <e p="Parameter.cs" t="Include" />
         <e p="View.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
