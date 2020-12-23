@@ -3,7 +3,7 @@ using Entity;
 
 namespace IMapper
 {
-    public interface IMapperContributor:IMapper<Contributor, int>
+    public interface IMapperContributor : IMapper<Contributor, int>
     {
         
     }

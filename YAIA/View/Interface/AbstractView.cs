@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Text.RegularExpressions;
 using View.Util;
 
@@ -43,6 +45,40 @@ namespace View.Interface
             } while (cont);
 
             return read;
+        }
+        
+        
+
+        protected void PrintResultADO(IEnumerator result)
+        {
+            Console.WriteLine();
+            bool firstTime = true;
+            while (result.MoveNext())
+            {
+                DbDataRecord record = (DbDataRecord)result.Current;
+                if (firstTime)
+                {
+                    printHeader(record);
+                    firstTime = false;
+                }
+                string print = "";
+                for (int i = 0; i < record.FieldCount; i++)
+                {
+                    print += record.GetValue(i) + " ";
+                }
+                Console.WriteLine(print);
+            }
+            Console.WriteLine();
+        }
+        
+        private void printHeader(DbDataRecord record)
+        {
+            string print = "";
+            for (int i = 0; i < record.FieldCount; i++)
+            {
+                print += record.GetName(i) + " ";
+            }
+            Console.WriteLine(print);
         }
     }
 }

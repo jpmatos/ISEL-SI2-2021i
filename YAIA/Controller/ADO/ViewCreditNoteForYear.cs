@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Data;
 using System.Diagnostics;
 using Mapper;
@@ -5,9 +7,9 @@ using Microsoft.Data.SqlClient;
 
 namespace Controller.ADO
 {
-    public static class InsertCreditNote
+    public static class ViewCreditNoteForYear
     {
-        public static void Execute(string invoiceValue, DataTable itemList)
+        public static IEnumerator Execute(int year)
         {
             using Session s = new Session();
             bool isMyConnection = false;
@@ -16,12 +18,15 @@ namespace Controller.ADO
                 isMyConnection = s.OpenConnection();
                 
                 using SqlCommand cmd = s.CreateCommand();
-                cmd.CommandText = "insertCreditNote";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@invoice", invoiceValue);
-                cmd.Parameters.AddWithValue("@itemList", itemList);
-                
-                cmd.ExecuteReader();
+                cmd.CommandText = "SELECT * FROM viewCreditNoteYear(@year)";
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@year", year);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                DataTable table = new DataTable();
+                table.Load(reader);
+                DataTableReader res = new DataTableReader(table);
+                return res.GetEnumerator();
             }
             catch (SqlException e)
             {

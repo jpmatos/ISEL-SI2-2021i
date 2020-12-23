@@ -9,8 +9,7 @@ namespace Mapper
     public class MapperContributor : IMapperContributor
     {
         private readonly IMapperSession _mySession;
-        private bool isMyConnection;
-        //private bool isMyTransaction;
+        private bool _isMyConnection;
         
         private SqlCommand CreateCommand()
         {
@@ -29,7 +28,7 @@ namespace Mapper
 
         public Contributor Read(int id)
         {
-            isMyConnection = _mySession.OpenConnection();
+            _isMyConnection = _mySession.OpenConnection();
             
             Contributor contributor = new Contributor();
 
@@ -56,7 +55,7 @@ namespace Mapper
             contributor.Name = ((string) p2.Value).TrimEnd();
             contributor.Address = ((string) p3.Value).TrimEnd();
             
-            _mySession.CloseConnection(isMyConnection);
+            _mySession.CloseConnection(_isMyConnection);
 
             return contributor;
         }

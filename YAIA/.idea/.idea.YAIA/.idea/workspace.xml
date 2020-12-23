@@ -30,49 +30,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YAIA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ADO/InsertCreditNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ADO/InsertCreditNote.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/EFCore/InsertCreditNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/EFCore/InsertCreditNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/obj/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMapper.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IMapper/obj/Debug/netcoreapp3.1/IMapper.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mapper.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/obj/Debug/netcoreapp3.1/Mapper.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/InsertCreditNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/InsertCreditNote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/EFCore/InsertItemToInvoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/EFCore/InsertItemToInvoice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMapper/IMapperContributor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapper/MapperContributor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper/MapperContributor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Interface/AbstractView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/Interface/AbstractView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/netcoreapp3.1/View.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/netcoreapp3.1/View.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YAIA/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Controller.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/View.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/bin/Debug/netcoreapp3.1/YAIA.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YAIA/obj/Debug/netcoreapp3.1/YAIA.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,24 +50,16 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2C002A74-B0B2-4A2F-930C-2E94672A05AD/ED/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2C002A74-B0B2-4A2F-930C-2E94672A05AD/D7/FromSqlQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/87DBB896-6B20-4A14-9B6A-7AB43642646D/92/c2aae43d/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/670F2EE2-23E7-4B4C-9DF4-C4C7ED8C22E9/ca/9775ba57/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2C002A74-B0B2-4A2F-930C-2E94672A05AD/4A/RelationalCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/IMapper/IMapperContributor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EFCore/InvoiceState.cs" />
-        <option value="$PROJECT_DIR$/EFCore/Item.cs" />
-        <option value="$PROJECT_DIR$/EFCore/ItemCredit.cs" />
-        <option value="$PROJECT_DIR$/EFCore/ItemHistory.cs" />
-        <option value="$PROJECT_DIR$/EFCore/Product.cs" />
-        <option value="$PROJECT_DIR$/EFCore/YAIA_Context.cs" />
-        <option value="$PROJECT_DIR$/Mappers/Session.cs" />
         <option value="$PROJECT_DIR$/IMappers/IMapperSession.cs" />
         <option value="$PROJECT_DIR$/YAIA/Program.cs" />
         <option value="$PROJECT_DIR$/View/Class1.cs" />
         <option value="$PROJECT_DIR$/Mapper/Session.cs" />
-        <option value="$PROJECT_DIR$/Mapper/MapperContributor.cs" />
         <option value="$PROJECT_DIR$/View/ADO.cs" />
         <option value="$PROJECT_DIR$/View/Entry.cs" />
         <option value="$PROJECT_DIR$/Entity/Invoice.cs" />
@@ -133,16 +89,24 @@
         <option value="$PROJECT_DIR$/Entity/TableTypes/ItemList.cs" />
         <option value="$PROJECT_DIR$/View/InsertInvoice.cs" />
         <option value="$PROJECT_DIR$/../SQL/Exercises/m-tests.sql" />
-        <option value="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" />
         <option value="$PROJECT_DIR$/Entity/TableTypes/ItemToAddList.cs" />
-        <option value="$PROJECT_DIR$/View/Interface/AbstractView.cs" />
-        <option value="$PROJECT_DIR$/YAIA/App.cs" />
         <option value="$PROJECT_DIR$/View/InsertCreditNote.cs" />
         <option value="$PROJECT_DIR$/View/InsertItemToInvoice.cs" />
-        <option value="$PROJECT_DIR$/Controller/EFCore/InsertCreditNote.cs" />
-        <option value="$PROJECT_DIR$/Controller/ADO/InsertCreditNote.cs" />
-        <option value="$PROJECT_DIR$/Controller/EFCore/InsertItemToInvoice.cs" />
         <option value="$PROJECT_DIR$/Controller/ADO/InsertItemToInvoice.cs" />
+        <option value="$PROJECT_DIR$/YAIA/App.cs" />
+        <option value="$PROJECT_DIR$/View/UpdateInvoiceValue.cs" />
+        <option value="$PROJECT_DIR$/Mapper/MapperContributor.cs" />
+        <option value="$PROJECT_DIR$/Mapper/MapperCreditNote.cs" />
+        <option value="$PROJECT_DIR$/IMapper/IMapperContributor.cs" />
+        <option value="$PROJECT_DIR$/IMapper/ICreditNote.cs" />
+        <option value="$PROJECT_DIR$/Controller/ADO/InsertCreditNote.cs" />
+        <option value="$PROJECT_DIR$/Controller/ADO/ViewCreditNoteForYear.cs" />
+        <option value="$PROJECT_DIR$/Controller/EFCore/ViewCreditNoteForYear.cs" />
+        <option value="$PROJECT_DIR$/View/ViewCreditNoteForYear.cs" />
+        <option value="$PROJECT_DIR$/View/Interface/AbstractView.cs" />
+        <option value="$PROJECT_DIR$/Controller/EFCore/InsertItemToInvoice.cs" />
+        <option value="$PROJECT_DIR$/Controller/EFCore/InsertInvoice.cs" />
+        <option value="$PROJECT_DIR$/Controller/EFCore/InsertCreditNote.cs" />
       </list>
     </option>
   </component>
@@ -278,7 +242,7 @@
       <workItem from="1608563377148" duration="15596000" />
       <workItem from="1608638700893" duration="7026000" />
       <workItem from="1608648008861" duration="8402000" />
-      <workItem from="1608727196601" duration="4278000" />
+      <workItem from="1608727196601" duration="15500000" />
     </task>
     <servers />
   </component>
@@ -307,10 +271,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="667" y="252" width="262" height="366" key="#Language_Injections/0.0.1600.900@0.0.1600.900" timestamp="1608477860343" />
-    <state x="234" y="278" width="1127" height="314" key="#SQL_Dialects" timestamp="1608477753583">
+    <state x="234" y="278" width="1127" height="314" key="#SQL_Dialects" timestamp="1608740928096">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="234" y="278" width="1127" height="314" key="#SQL_Dialects/0.0.1600.900@0.0.1600.900" timestamp="1608477753583" />
+    <state x="234" y="278" width="1127" height="314" key="#SQL_Dialects/0.0.1600.900@0.0.1600.900" timestamp="1608740928096" />
     <state x="286" y="304" width="1023" height="261" key="#SQL_Resolution_Scopes" timestamp="1608477782823">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -323,90 +287,90 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="424" height="464" key="DebuggerActiveHint/0.0.1600.900@0.0.1600.900" timestamp="1608575250594" />
-    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl" timestamp="1608646860170">
+    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl" timestamp="1608736317760">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1608646860170" />
-    <state width="1558" height="172" key="GridCell.Tab.0.bottom" timestamp="1608733060915">
+    <state x="583" y="194" width="430" height="482" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1608736317760" />
+    <state width="1558" height="172" key="GridCell.Tab.0.bottom" timestamp="1608746316190">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608733060915" />
-    <state width="1558" height="172" key="GridCell.Tab.0.center" timestamp="1608733060915">
+    <state width="1558" height="172" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608746316190" />
+    <state width="1558" height="172" key="GridCell.Tab.0.center" timestamp="1608746316189">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1608733060915" />
-    <state width="1558" height="172" key="GridCell.Tab.0.left" timestamp="1608733060914">
+    <state width="1558" height="172" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1608746316189" />
+    <state width="1558" height="172" key="GridCell.Tab.0.left" timestamp="1608746316189">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1608733060914" />
-    <state width="1558" height="172" key="GridCell.Tab.0.right" timestamp="1608733060915">
+    <state width="1558" height="172" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1608746316189" />
+    <state width="1558" height="172" key="GridCell.Tab.0.right" timestamp="1608746316189">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="172" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1608733060915" />
-    <state width="1558" height="311" key="GridCell.Tab.1.bottom" timestamp="1608731388139">
+    <state width="1558" height="172" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1608746316189" />
+    <state width="1558" height="178" key="GridCell.Tab.1.bottom" timestamp="1608746286785">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608731388139" />
-    <state width="1558" height="311" key="GridCell.Tab.1.center" timestamp="1608731388139">
+    <state width="1558" height="178" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608746286785" />
+    <state width="1558" height="178" key="GridCell.Tab.1.center" timestamp="1608746286784">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1608731388139" />
-    <state width="1558" height="311" key="GridCell.Tab.1.left" timestamp="1608731388138">
+    <state width="1558" height="178" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1608746286784" />
+    <state width="1558" height="178" key="GridCell.Tab.1.left" timestamp="1608746286784">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1608731388138" />
-    <state width="1558" height="311" key="GridCell.Tab.1.right" timestamp="1608731388139">
+    <state width="1558" height="178" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1608746286784" />
+    <state width="1558" height="178" key="GridCell.Tab.1.right" timestamp="1608746286784">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1608731388139" />
-    <state width="1558" height="311" key="GridCell.Tab.2.bottom" timestamp="1608731388140">
+    <state width="1558" height="178" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1608746286784" />
+    <state width="1558" height="178" key="GridCell.Tab.2.bottom" timestamp="1608746286785">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.2.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608731388140" />
-    <state width="1558" height="311" key="GridCell.Tab.2.center" timestamp="1608731388139">
+    <state width="1558" height="178" key="GridCell.Tab.2.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608746286785" />
+    <state width="1558" height="178" key="GridCell.Tab.2.center" timestamp="1608746286785">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.2.center/0.0.1600.900@0.0.1600.900" timestamp="1608731388139" />
-    <state width="1558" height="311" key="GridCell.Tab.2.left" timestamp="1608731388139">
+    <state width="1558" height="178" key="GridCell.Tab.2.center/0.0.1600.900@0.0.1600.900" timestamp="1608746286785" />
+    <state width="1558" height="178" key="GridCell.Tab.2.left" timestamp="1608746286785">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.2.left/0.0.1600.900@0.0.1600.900" timestamp="1608731388139" />
-    <state width="1558" height="311" key="GridCell.Tab.2.right" timestamp="1608731388140">
+    <state width="1558" height="178" key="GridCell.Tab.2.left/0.0.1600.900@0.0.1600.900" timestamp="1608746286785" />
+    <state width="1558" height="178" key="GridCell.Tab.2.right" timestamp="1608746286785">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1608731388140" />
-    <state width="1558" height="311" key="GridCell.Tab.3.bottom" timestamp="1608731388141">
+    <state width="1558" height="178" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1608746286785" />
+    <state width="1558" height="178" key="GridCell.Tab.3.bottom" timestamp="1608746286787">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.3.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608731388141" />
-    <state width="1558" height="311" key="GridCell.Tab.3.center" timestamp="1608731388140">
+    <state width="1558" height="178" key="GridCell.Tab.3.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608746286787" />
+    <state width="1558" height="178" key="GridCell.Tab.3.center" timestamp="1608746286787">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.3.center/0.0.1600.900@0.0.1600.900" timestamp="1608731388140" />
-    <state width="1558" height="311" key="GridCell.Tab.3.left" timestamp="1608731388140">
+    <state width="1558" height="178" key="GridCell.Tab.3.center/0.0.1600.900@0.0.1600.900" timestamp="1608746286787" />
+    <state width="1558" height="178" key="GridCell.Tab.3.left" timestamp="1608746286786">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.3.left/0.0.1600.900@0.0.1600.900" timestamp="1608731388140" />
-    <state width="1558" height="311" key="GridCell.Tab.3.right" timestamp="1608731388141">
+    <state width="1558" height="178" key="GridCell.Tab.3.left/0.0.1600.900@0.0.1600.900" timestamp="1608746286786" />
+    <state width="1558" height="178" key="GridCell.Tab.3.right" timestamp="1608746286787">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.3.right/0.0.1600.900@0.0.1600.900" timestamp="1608731388141" />
-    <state width="1558" height="311" key="GridCell.Tab.4.bottom" timestamp="1608731388142">
+    <state width="1558" height="178" key="GridCell.Tab.3.right/0.0.1600.900@0.0.1600.900" timestamp="1608746286787" />
+    <state width="1558" height="178" key="GridCell.Tab.4.bottom" timestamp="1608746286788">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.4.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608731388142" />
-    <state width="1558" height="311" key="GridCell.Tab.4.center" timestamp="1608731388141">
+    <state width="1558" height="178" key="GridCell.Tab.4.bottom/0.0.1600.900@0.0.1600.900" timestamp="1608746286788" />
+    <state width="1558" height="178" key="GridCell.Tab.4.center" timestamp="1608746286788">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.4.center/0.0.1600.900@0.0.1600.900" timestamp="1608731388141" />
-    <state width="1558" height="311" key="GridCell.Tab.4.left" timestamp="1608731388141">
+    <state width="1558" height="178" key="GridCell.Tab.4.center/0.0.1600.900@0.0.1600.900" timestamp="1608746286788" />
+    <state width="1558" height="178" key="GridCell.Tab.4.left" timestamp="1608746286787">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.4.left/0.0.1600.900@0.0.1600.900" timestamp="1608731388141" />
-    <state width="1558" height="311" key="GridCell.Tab.4.right" timestamp="1608731388141">
+    <state width="1558" height="178" key="GridCell.Tab.4.left/0.0.1600.900@0.0.1600.900" timestamp="1608746286787" />
+    <state width="1558" height="178" key="GridCell.Tab.4.right" timestamp="1608746286788">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="311" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1608731388141" />
+    <state width="1558" height="178" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1608746286788" />
     <state x="395" y="171" width="806" height="528" key="Rider.ProjectTemplateDialog.Size" timestamp="1608569640160">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

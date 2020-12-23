@@ -24,12 +24,14 @@
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
           <e p="InsertItemToInvoice.cs" t="Include" />
+          <e p="ViewCreditNoteForYear.cs" t="Include" />
         </e>
         <e p="Controller.csproj" t="IncludeRecursive" />
         <e p="EFCore" t="Include">
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
           <e p="InsertItemToInvoice.cs" t="Include" />
+          <e p="ViewCreditNoteForYear.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -114,11 +116,13 @@
           <e p="AbstractView.cs" t="Include" />
           <e p="IView.cs" t="Include" />
         </e>
+        <e p="UpdateInvoiceValue.cs" t="Include" />
         <e p="Util" t="Include">
           <e p="DataAccess.cs" t="Include" />
           <e p="Parameter.cs" t="Include" />
         </e>
         <e p="View.csproj" t="IncludeRecursive" />
+        <e p="ViewCreditNoteForYear.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

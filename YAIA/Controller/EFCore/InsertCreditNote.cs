@@ -8,15 +8,20 @@ namespace Controller.EFCore
 {
     public static class InsertCreditNote
     {
-        public static void Execute(string invoice, DataTable itemList)
+        public static void Execute(string invoiceValue, DataTable itemListValue)
         {
             try
             {
                 using YAIA_Context ctx = new YAIA_Context();
-                SqlParameter p1 = new SqlParameter("@p1", SqlDbType.Structured);
-                p1.Value = itemList;
-                p1.TypeName = "[dbo].[ItemListType]";
-                ctx.Database.ExecuteSqlRaw("insertCreditNote @p0, @p1", invoice, p1);
+                
+                SqlParameter invoice = new SqlParameter("@invoice", SqlDbType.NVarChar);
+                invoice.Value = invoiceValue;
+                
+                SqlParameter itemList = new SqlParameter("@itemList", SqlDbType.Structured);
+                itemList.Value = itemListValue;
+                itemList.TypeName = "[dbo].[ItemListType]";
+                
+                ctx.Database.ExecuteSqlRaw($"insertCreditNote {@invoice}, {@itemList}", invoice, itemList);
             }
             catch (SqlException e)
             {

@@ -8,15 +8,20 @@ namespace Controller.EFCore
 {
     public static class InsertItemToInvoice
     {
-        public static void Execute(string invoice, DataTable itemToAdd)
+        public static void Execute(string invoiceValue, DataTable itemToAddList)
         {
             try
             {
                 using YAIA_Context ctx = new YAIA_Context();
-                SqlParameter p1 = new SqlParameter("@p1", SqlDbType.Structured);
-                p1.Value = itemToAdd;
-                p1.TypeName = "[dbo].[ItemToAddListType]";
-                ctx.Database.ExecuteSqlRaw("insertItemToInvoice @p0, @p1", invoice, p1);
+                
+                SqlParameter invoice = new SqlParameter("@invoice", SqlDbType.NVarChar);
+                invoice.Value = invoiceValue;
+                
+                SqlParameter itemToAdd = new SqlParameter("@itemToAdd", SqlDbType.Structured);
+                itemToAdd.Value = itemToAddList;
+                itemToAdd.TypeName = "[dbo].[ItemToAddListType]";
+                
+                ctx.Database.ExecuteSqlRaw($"insertItemToInvoice {@invoice}, {@itemToAdd}", invoice, itemToAdd);
             }
             catch (SqlException e)
             {

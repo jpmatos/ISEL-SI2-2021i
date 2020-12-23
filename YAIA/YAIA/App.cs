@@ -33,6 +33,8 @@ namespace YAIA
             InsertInvoice,
             InsertCreditNote,
             InsertItems,
+            UpdateInvoiceValue,
+            ViewCreditNoteForYear,
             SwitchData
         }
         
@@ -42,6 +44,8 @@ namespace YAIA
             _dbMethods.Add(Option.InsertInvoice, new InsertInvoice().Query);
             _dbMethods.Add(Option.InsertCreditNote, new InsertCreditNote().Query);
             _dbMethods.Add(Option.InsertItems, new InsertItemToInvoice().Query);
+            _dbMethods.Add(Option.UpdateInvoiceValue, new UpdateInvoiceValue().Query);
+            _dbMethods.Add(Option.ViewCreditNoteForYear, new ViewCreditNoteForYear().Query);
             _dbMethods.Add(Option.SwitchData, SwitchData);
         }
         
@@ -51,10 +55,12 @@ namespace YAIA
             try
             {
                 Console.WriteLine("Yet Another Invoice Application");
-                Console.WriteLine("1. Insert Invoice");
-                Console.WriteLine("2. Insert Credit Note");
-                Console.WriteLine("3. Insert Items In Invoice");
-                Console.WriteLine($"4. ---Switch Mapper--- (Current: {DataAccess.ToString().ToUpper()})");
+                Console.WriteLine("1. f.Insert Invoice");
+                Console.WriteLine("2. g.Insert Credit Note");
+                Console.WriteLine("3. h.Insert Items In Invoice");
+                Console.WriteLine("4. i.Update Invoice Value");
+                Console.WriteLine("5. j.View Credit Note For Year");
+                Console.WriteLine($"6. ---Switch Mapper--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
                 option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);
