@@ -5,9 +5,9 @@ using Microsoft.Data.SqlClient;
 
 namespace Controller.ADO
 {
-    public static class InsertCreditNote
+    public static class InsertItemToInvoice
     {
-        public static void Execute(string invoiceValue, DataTable itemList)
+        public static void Execute(string invoiceValue, DataTable itemToAdd)
         {
             using Session s = new Session();
             bool isMyConnection = false;
@@ -15,10 +15,10 @@ namespace Controller.ADO
             {
                 isMyConnection = s.OpenConnection();
                 using SqlCommand cmd = s.CreateCommand();
-                cmd.CommandText = "insertCreditNote";
+                cmd.CommandText = "insertItemToInvoice";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@invoice", invoiceValue);
-                cmd.Parameters.AddWithValue("@itemList", itemList);
+                cmd.Parameters.AddWithValue("@itemToAdd", itemToAdd);
                 cmd.ExecuteReader();
             }
             catch (SqlException e)

@@ -3,6 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/f-invoice.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/g-creditnote.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/../SQL/Exercises/h-item.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/select.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Mapper/MapperContributor.cs" dialect="TSQL" />
   </component>

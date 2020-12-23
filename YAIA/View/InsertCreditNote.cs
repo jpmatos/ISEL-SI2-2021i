@@ -29,6 +29,7 @@ namespace View
 
                 foreach (var item in itemList)
                     itemListDataTable.Rows.Add(item.Sku, item.Quantity);
+                
                 switch (dataAccess)
                 {
                     case DataAccess.Ado:
@@ -56,7 +57,7 @@ namespace View
             bool cont = true;
             do
             {
-                Console.WriteLine($"SKU (not null) (enter to quit)");
+                Console.WriteLine($"SKU (enter to quit)");
                 string sku = Console.ReadLine();
 
                 if (sku.Equals("null", StringComparison.InvariantCultureIgnoreCase) || sku.Equals(""))
@@ -71,7 +72,7 @@ namespace View
                     continue;
                 }
 
-                Console.WriteLine($"Quantity");
+                Console.WriteLine($"Quantity (not null)");
                 string quantity = Console.ReadLine();
 
                 if (!RegexInteger.IsMatch(quantity) || 

@@ -32,6 +32,7 @@ namespace YAIA
             Exit,
             InsertInvoice,
             InsertCreditNote,
+            InsertItems,
             SwitchData
         }
         
@@ -40,6 +41,7 @@ namespace YAIA
             _dbMethods = new Dictionary<Option, DbMethod>();
             _dbMethods.Add(Option.InsertInvoice, new InsertInvoice().Query);
             _dbMethods.Add(Option.InsertCreditNote, new InsertCreditNote().Query);
+            _dbMethods.Add(Option.InsertItems, new InsertItemToInvoice().Query);
             _dbMethods.Add(Option.SwitchData, SwitchData);
         }
         
@@ -51,7 +53,8 @@ namespace YAIA
                 Console.WriteLine("Yet Another Invoice Application");
                 Console.WriteLine("1. Insert Invoice");
                 Console.WriteLine("2. Insert Credit Note");
-                Console.WriteLine($"3. ---Switch Mapper--- (Current: {DataAccess.ToString().ToUpper()})");
+                Console.WriteLine("3. Insert Items In Invoice");
+                Console.WriteLine($"4. ---Switch Mapper--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
                 option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);
