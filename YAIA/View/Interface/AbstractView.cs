@@ -12,7 +12,7 @@ namespace View.Interface
         protected static readonly Regex RegexString = new Regex(@"^[a-zA-Z0-9 _-]*$");
         protected static readonly Regex RegexInteger = new Regex(@"^[0-9,.]*$");
 
-        public abstract void Query(DataAccess e);
+        public abstract void Query(DataAccess dataAccess);
 
         protected static string Input(Parameter parameter)
         {

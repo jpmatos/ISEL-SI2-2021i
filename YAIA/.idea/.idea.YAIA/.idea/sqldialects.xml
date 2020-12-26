@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../SQL/Exercises/e-code.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/f-invoice.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/g-creditnote.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/h-item.sql" dialect="TSQL" />
@@ -8,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/j-creditnoteyear.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/select.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Controller/ADO/ViewCreditNoteForYear.cs" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/Controller/EFCore/ObtainNextCode.cs" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Controller/EFCore/ViewCreditNoteForYear.cs" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Mapper/MapperContributor.cs" dialect="TSQL" />
   </component>

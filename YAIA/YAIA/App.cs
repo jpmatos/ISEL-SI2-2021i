@@ -35,6 +35,7 @@ namespace YAIA
             InsertItems,
             UpdateInvoiceValue,
             ViewCreditNoteForYear,
+            ObtainCode,
             SwitchData
         }
         
@@ -46,6 +47,7 @@ namespace YAIA
             _dbMethods.Add(Option.InsertItems, new InsertItemToInvoice().Query);
             _dbMethods.Add(Option.UpdateInvoiceValue, new UpdateInvoiceValue().Query);
             _dbMethods.Add(Option.ViewCreditNoteForYear, new ViewCreditNoteForYear().Query);
+            _dbMethods.Add(Option.ObtainCode, new ObtainCreditCode().Query);
             _dbMethods.Add(Option.SwitchData, SwitchData);
         }
         
@@ -60,7 +62,8 @@ namespace YAIA
                 Console.WriteLine("3. h.Insert Items In Invoice");
                 Console.WriteLine("4. i.Update Invoice Value");
                 Console.WriteLine("5. j.View Credit Note For Year");
-                Console.WriteLine($"6. ---Switch Mapper--- (Current: {DataAccess.ToString().ToUpper()})");
+                Console.WriteLine("6. e.Obtain Next Invoice Or Credit Note Code");
+                Console.WriteLine($"7. ---Switch Data Access--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
                 option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);

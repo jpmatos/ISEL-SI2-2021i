@@ -24,6 +24,7 @@
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
           <e p="InsertItemToInvoice.cs" t="Include" />
+          <e p="ObtainNextCode.cs" t="Include" />
           <e p="ViewCreditNoteForYear.cs" t="Include" />
         </e>
         <e p="Controller.csproj" t="IncludeRecursive" />
@@ -31,6 +32,7 @@
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
           <e p="InsertItemToInvoice.cs" t="Include" />
+          <e p="ObtainNextCode.cs" t="Include" />
           <e p="ViewCreditNoteForYear.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
@@ -67,6 +69,7 @@
       </e>
       <e p="Entity" t="IncludeRecursive">
         <e p="Contributor.cs" t="Include" />
+        <e p="CreditNote.cs" t="Include" />
         <e p="Entity.csproj" t="IncludeRecursive" />
         <e p="Invoice.cs" t="Include" />
         <e p="TableTypes" t="Include">
@@ -85,6 +88,8 @@
       <e p="IMapper" t="IncludeRecursive">
         <e p="IMapper.csproj" t="IncludeRecursive" />
         <e p="IMapperContributor.cs" t="Include" />
+        <e p="IMapperCreditNote.cs" t="Include" />
+        <e p="IMapperInvoice.cs" t="Include" />
         <e p="IMapperSession.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -98,6 +103,8 @@
       <e p="Mapper" t="IncludeRecursive">
         <e p="Mapper.csproj" t="IncludeRecursive" />
         <e p="MapperContributor.cs" t="Include" />
+        <e p="MapperCreditNote.cs" t="Include" />
+        <e p="MapperInvoice.cs" t="Include" />
         <e p="Session.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -116,6 +123,7 @@
           <e p="AbstractView.cs" t="Include" />
           <e p="IView.cs" t="Include" />
         </e>
+        <e p="ObtainCreditCode.cs" t="Include" />
         <e p="UpdateInvoiceValue.cs" t="Include" />
         <e p="Util" t="Include">
           <e p="DataAccess.cs" t="Include" />

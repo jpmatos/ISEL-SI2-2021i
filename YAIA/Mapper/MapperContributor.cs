@@ -51,13 +51,18 @@ namespace Mapper
             if(p1.Value is System.DBNull)
                 throw new Exception("Contributor not found: NIF=" + id);
 
-            contributor.NIF = (int) p1.Value;
+            contributor.Nif = (int) p1.Value;
             contributor.Name = ((string) p2.Value).TrimEnd();
             contributor.Address = ((string) p3.Value).TrimEnd();
             
             _mySession.CloseConnection(_isMyConnection);
 
             return contributor;
+        }
+
+        public Contributor[] Read(string condition)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Contributor entity)

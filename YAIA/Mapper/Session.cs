@@ -9,5 +9,15 @@ namespace Mapper
         {
             return new MapperContributor(this);
         }
+
+        public IMapperInvoice CreateMapperInvoice()
+        {
+            return new MapperInvoice(this);
+        }
+
+        public IMapperCreditNote CreateCreditNote()
+        {
+            return new MapperCreditNote(this);
+        }
     }
 }
