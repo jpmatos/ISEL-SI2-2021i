@@ -28,13 +28,17 @@ namespace EFCore
         public virtual DbSet<ItemCredit> ItemCredits { get; set; }
         public virtual DbSet<ItemHistory> ItemHistories { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        
+        public static string UserId { get; set; }
+        public static string Password { get; set; }
+        public const string DataSource = "localhost";
+        public const string InitialCatalog = "SI2_Grupo02_2021i";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=SI2_Grupo02_2021i;User id=sa; Password=Jpp55tm123");
+                optionsBuilder.UseSqlServer($"Data Source={DataSource};Initial Catalog={InitialCatalog};User id={UserId}; Password={Password}");
             }
         }
 
