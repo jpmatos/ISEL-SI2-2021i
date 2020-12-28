@@ -11,17 +11,17 @@ namespace Mapper
     {
         private readonly IMapperSession _mySession;
         private bool _isMyConnection;
-        
+
         private SqlCommand CreateCommand()
         {
             return _mySession.CreateCommand();
         }
-        
+
         public MapperInvoice(IMapperSession s)
         {
             _mySession = s;
         }
-        
+
         public void Create(Invoice entity)
         {
             throw new System.NotImplementedException();
@@ -39,7 +39,7 @@ namespace Mapper
 
             SqlCommand cmd = CreateCommand();
             cmd.CommandText = $"SELECT * FROM Invoice WHERE {condition}";
-            
+
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -50,7 +50,7 @@ namespace Mapper
                 invoice.TotalValue = reader[3] != DBNull.Value ? (decimal) reader[3] : 0;
                 invoice.TotalIva = reader[4] != DBNull.Value ? (decimal) reader[4] : 0;
                 invoice.CreationDate = reader[5] != DBNull.Value ? (DateTime) reader[5] : DateTime.MinValue;
-                invoice.EmissionDate = reader[6] != DBNull.Value ? (DateTime) reader[6] : DateTime.MinValue; 
+                invoice.EmissionDate = reader[6] != DBNull.Value ? (DateTime) reader[6] : DateTime.MinValue;
                 res.Add(invoice);
             }
 
@@ -78,7 +78,7 @@ namespace Mapper
 
             cmd.ExecuteNonQuery();
 
-            return (string)p1.Value;
+            return (string) p1.Value;
         }
     }
 }

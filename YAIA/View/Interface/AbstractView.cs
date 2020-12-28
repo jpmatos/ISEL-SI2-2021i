@@ -47,8 +47,7 @@ namespace View.Interface
 
             return read;
         }
-        
-        
+
 
         protected void PrintResultADO(IEnumerator result)
         {
@@ -56,22 +55,25 @@ namespace View.Interface
             bool firstTime = true;
             while (result.MoveNext())
             {
-                DbDataRecord record = (DbDataRecord)result.Current;
+                DbDataRecord record = (DbDataRecord) result.Current;
                 if (firstTime)
                 {
                     printHeader(record);
                     firstTime = false;
                 }
+
                 string print = "";
                 for (int i = 0; i < record.FieldCount; i++)
                 {
                     print += record.GetValue(i) + " ";
                 }
+
                 Console.WriteLine(print);
             }
+
             Console.WriteLine();
         }
-        
+
         private void printHeader(DbDataRecord record)
         {
             string print = "";
@@ -79,10 +81,10 @@ namespace View.Interface
             {
                 print += record.GetName(i) + " ";
             }
+
             Console.WriteLine(print);
         }
-        
-        
+
 
         protected List<ItemToAddList> InputItemToAddList()
         {
@@ -108,19 +110,20 @@ namespace View.Interface
                 Console.WriteLine("Quantity (not null)");
                 string quantity = Console.ReadLine();
 
-                if (!RegexInteger.IsMatch(quantity) || 
-                    quantity.Equals("null", StringComparison.InvariantCultureIgnoreCase) || quantity.Equals("") || quantity.Equals("0"))
+                if (!RegexInteger.IsMatch(quantity) ||
+                    quantity.Equals("null", StringComparison.InvariantCultureIgnoreCase) || quantity.Equals("") ||
+                    quantity.Equals("0"))
                 {
                     Console.WriteLine($"Invalid quantity '{quantity}'");
                     continue;
                 }
-                
+
                 Console.WriteLine("Discount");
                 string discount = Console.ReadLine().Replace(",", ".");
 
                 if (discount.Equals(""))
                     discount = "0";
-                
+
                 if (!RegexInteger.IsMatch(discount))
                 {
                     Console.WriteLine($"Invalid discount '{discount}'");
@@ -129,7 +132,7 @@ namespace View.Interface
 
                 Console.WriteLine("Description");
                 string description = Console.ReadLine();
-                
+
                 if (!RegexString.IsMatch(sku))
                 {
                     Console.WriteLine($"Invalid description '{description}'");

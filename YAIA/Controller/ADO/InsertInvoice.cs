@@ -1,7 +1,6 @@
 using System.Data;
 using System.Data.SqlTypes;
 using System.Diagnostics;
-using Entity;
 using Mapper;
 using Microsoft.Data.SqlClient;
 
@@ -16,14 +15,14 @@ namespace Controller.ADO
             try
             {
                 isMyConnection = s.OpenConnection();
-                
+
                 using SqlCommand cmd = s.CreateCommand();
                 cmd.CommandText = "insertInvoice";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@NIF", nif);
                 cmd.Parameters.AddWithValue("@name", name ?? SqlString.Null);
                 cmd.Parameters.AddWithValue("@address", address ?? SqlString.Null);
-                
+
                 cmd.ExecuteReader();
             }
             catch (SqlException e)

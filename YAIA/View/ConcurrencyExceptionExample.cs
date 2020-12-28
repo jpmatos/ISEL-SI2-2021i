@@ -21,9 +21,12 @@ namespace View
                 {
                     Console.Clear();
                     Console.WriteLine("Force DbUpdateConcurrencyException?");
-                    Console.WriteLine("This is done by executing an UPDATE statement in one of the invoices before context is saved.");
-                    Console.WriteLine("The updated field is 'total_value' which has the annotation '[ConcurrencyCheck]'.");
-                    Console.WriteLine("This annotation will cause a DbUpdateConcurrencyException when updated in an Entity in the Modified state.");
+                    Console.WriteLine(
+                        "This is done by executing an UPDATE statement in one of the invoices before context is saved.");
+                    Console.WriteLine(
+                        "The updated field is 'total_value' which has the annotation '[ConcurrencyCheck]'.");
+                    Console.WriteLine(
+                        "This annotation will cause a DbUpdateConcurrencyException when updated in an Entity in the Modified state.");
                     Console.WriteLine("1. Yes");
                     Console.WriteLine("2. No");
                     option = Console.ReadLine();
@@ -34,7 +37,8 @@ namespace View
                         option == "1");
 
                 if (isConcurrencyException)
-                    Console.WriteLine("A DbUpdateConcurrencyException was thrown! Check Debug output for exception details.");
+                    Console.WriteLine(
+                        "A DbUpdateConcurrencyException was thrown! Check Debug output for exception details.");
                 else
                     Console.WriteLine("No exception was thrown! NIF values were successfully swapped.");
 

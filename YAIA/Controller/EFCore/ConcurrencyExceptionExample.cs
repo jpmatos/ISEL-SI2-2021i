@@ -15,7 +15,7 @@ namespace Controller.EFCore
             try
             {
                 using YAIA_Context ctx = new YAIA_Context();
-                
+
                 Console.WriteLine("Reading invoices from DB...");
                 Invoice invoice1 = ctx.Invoices.Single(i => i.Code == invoice1Value);
                 Invoice invoice2 = ctx.Invoices.Single(i => i.Code == invoice2Value);
@@ -29,17 +29,19 @@ namespace Controller.EFCore
                 {
                     SqlParameter invoice = new SqlParameter("@invoice", SqlDbType.NVarChar, 12);
                     invoice.Value = invoice1Value;
-                    
+
                     SqlParameter total_value = new SqlParameter("@total_value", SqlDbType.Money);
                     total_value.Value = new Random().Next(1, 10000);
-                    
+
                     Console.WriteLine("Updating 'total_value' before calling SavingChanges()...");
-                    ctx.Database.ExecuteSqlRaw($"UPDATE Invoice SET total_value = {@total_value} WHERE code = '{@invoice1Value}'", invoice, total_value);
+                    ctx.Database.ExecuteSqlRaw(
+                        $"UPDATE Invoice SET total_value = {@total_value} WHERE code = '{@invoice1Value}'", invoice,
+                        total_value);
                 }
 
                 Console.WriteLine("Calling SaveChanges()...");
                 ctx.SaveChanges();
-                
+
                 return false;
             }
             catch (SqlException e)

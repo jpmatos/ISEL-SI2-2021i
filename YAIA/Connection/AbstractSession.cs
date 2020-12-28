@@ -14,18 +14,18 @@ namespace Connection
         private readonly string _connectionString;
         private bool _transactionVotes;
 
-        public AbstractSession()
+        protected AbstractSession()
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = DataSource;
             builder.InitialCatalog = InitialCatalog;
-            builder.UserID = UserId;//cr.Username;
-            builder.Password = Password;//cr.Password;
+            builder.UserID = UserId; //cr.Username;
+            builder.Password = Password; //cr.Password;
             builder.MaxPoolSize = 10;
-            
-            _connectionString = builder.ConnectionString; 
+
+            _connectionString = builder.ConnectionString;
         }
-        
+
         public void Login()
         {
             using SqlConnection con = new SqlConnection(_connectionString);

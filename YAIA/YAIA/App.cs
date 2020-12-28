@@ -4,14 +4,15 @@ using View;
 using View.Util;
 
 namespace YAIA
-{ 
+{
     public class App
     {
-        
         private delegate void DbMethod(DataAccess data);
-        private readonly Dictionary<Option, DbMethod> _dbMethods;  
-             
+
+        private readonly Dictionary<Option, DbMethod> _dbMethods;
+
         private static App _instance;
+
         public static App Instance
         {
             get => _instance ??= new App();
@@ -20,11 +21,7 @@ namespace YAIA
 
         private const DataAccess DefaultData = DataAccess.Ado;
 
-        private DataAccess DataAccess
-        {
-            get;
-            set;
-        }
+        private DataAccess DataAccess { get; set; }
 
         private enum Option
         {
@@ -40,7 +37,7 @@ namespace YAIA
             ConcurrencyException,
             SwitchData
         }
-        
+
         private App()
         {
             _dbMethods = new Dictionary<Option, DbMethod>();
@@ -54,7 +51,7 @@ namespace YAIA
             _dbMethods.Add(Option.ConcurrencyException, new ConcurrencyExceptionExample().Query);
             _dbMethods.Add(Option.SwitchData, SwitchData);
         }
-        
+
         private Option DisplayMenu()
         {
             Option option = Option.Unknown;
@@ -72,7 +69,7 @@ namespace YAIA
                 Console.WriteLine($"9. ---Switch Data Access--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
-                option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);
+                option = (Option) Enum.Parse(typeof(Option), result ?? string.Empty);
             }
             catch (ArgumentException)
             {
@@ -81,13 +78,13 @@ namespace YAIA
 
             return option;
         }
-        
+
         private void SwitchData(DataAccess _)
         {
             DataAccess = DataAccess == DataAccess.Ado ? DataAccess.EfCore : DataAccess.Ado;
             Console.WriteLine($"Switched to {DataAccess.ToString().ToUpper()}");
         }
-        
+
         public void Run()
         {
             DataAccess = DefaultData;
@@ -107,7 +104,6 @@ namespace YAIA
                 {
                     //Nothing to do. The option was not a valid one. Read another.
                 }
-
             } while (userInput != Option.Exit);
         }
     }

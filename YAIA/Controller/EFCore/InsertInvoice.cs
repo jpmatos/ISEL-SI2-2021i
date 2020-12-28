@@ -14,16 +14,16 @@ namespace Controller.EFCore
             try
             {
                 using YAIA_Context ctx = new YAIA_Context();
-                
+
                 SqlParameter nif = new SqlParameter("@nif", SqlDbType.Int);
                 nif.Value = nifValue;
-                
+
                 SqlParameter name = new SqlParameter("@name", SqlDbType.NVarChar);
                 name.Value = nameValue ?? SqlString.Null;
-                
+
                 SqlParameter address = new SqlParameter("@address", SqlDbType.NVarChar);
                 address.Value = addressValue ?? SqlString.Null;
-                
+
                 ctx.Database.ExecuteSqlRaw($"insertInvoice {@nif}, {@name}, {@address}", nif, name, address);
             }
             catch (SqlException e)

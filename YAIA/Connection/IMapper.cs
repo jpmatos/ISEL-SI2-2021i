@@ -1,6 +1,6 @@
 namespace Connection
 {
-    public interface IMapper <T, in TR>
+    public interface IMapper<T, in TR>
     {
         void Create(T entity);
         T Read(TR id);

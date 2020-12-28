@@ -13,14 +13,14 @@ namespace Controller.EFCore
             try
             {
                 using YAIA_Context ctx = new YAIA_Context();
-                
+
                 SqlParameter invoice = new SqlParameter("@invoice", SqlDbType.NVarChar);
                 invoice.Value = invoiceValue;
-                
+
                 SqlParameter itemList = new SqlParameter("@itemList", SqlDbType.Structured);
                 itemList.Value = itemListValue;
                 itemList.TypeName = "[dbo].[ItemListType]";
-                
+
                 ctx.Database.ExecuteSqlRaw($"insertCreditNote {@invoice}, {@itemList}", invoice, itemList);
             }
             catch (SqlException e)

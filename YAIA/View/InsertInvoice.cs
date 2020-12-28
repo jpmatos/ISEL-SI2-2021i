@@ -12,7 +12,7 @@ namespace View
             Parameter nif = new Parameter("NIF", typeof(int), false);
             Parameter name = new Parameter("Name", typeof(string), true);
             Parameter address = new Parameter("Address", typeof(string), true);
-            
+
             try
             {
                 switch (dataAccess)
@@ -27,6 +27,7 @@ namespace View
                         Console.WriteLine($"Unknown data access '{dataAccess}'");
                         throw new Exception();
                 }
+
                 Console.WriteLine("Successfully created Invoice");
             }
             catch (Exception)

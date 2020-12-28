@@ -29,7 +29,7 @@ namespace View
 
                 foreach (var item in itemList)
                     itemListDataTable.Rows.Add(item.Sku, item.Quantity);
-                
+
                 switch (dataAccess)
                 {
                     case DataAccess.Ado:
@@ -75,8 +75,9 @@ namespace View
                 Console.WriteLine($"Quantity (not null)");
                 string quantity = Console.ReadLine();
 
-                if (!RegexInteger.IsMatch(quantity) || 
-                    quantity.Equals("null", StringComparison.InvariantCultureIgnoreCase) || quantity.Equals("") || quantity.Equals("0"))
+                if (!RegexInteger.IsMatch(quantity) ||
+                    quantity.Equals("null", StringComparison.InvariantCultureIgnoreCase) || quantity.Equals("") ||
+                    quantity.Equals("0"))
                 {
                     Console.WriteLine($"Invalid quantity '{quantity}'");
                     continue;

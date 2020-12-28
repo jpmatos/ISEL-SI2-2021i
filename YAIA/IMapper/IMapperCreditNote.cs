@@ -5,6 +5,5 @@ namespace IMapper
 {
     public interface IMapperCreditNote : IMapper<CreditNote, int>
     {
-        
     }
 }

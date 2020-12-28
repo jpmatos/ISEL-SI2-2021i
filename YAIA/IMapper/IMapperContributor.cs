@@ -5,6 +5,5 @@ namespace IMapper
 {
     public interface IMapperContributor : IMapper<Contributor, int>
     {
-        
     }
 }

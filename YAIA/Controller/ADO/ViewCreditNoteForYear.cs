@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Data;
 using System.Diagnostics;
@@ -16,7 +15,7 @@ namespace Controller.ADO
             try
             {
                 isMyConnection = s.OpenConnection();
-                
+
                 using SqlCommand cmd = s.CreateCommand();
                 cmd.CommandText = "SELECT * FROM viewCreditNoteYear(@year)";
                 cmd.CommandType = CommandType.Text;

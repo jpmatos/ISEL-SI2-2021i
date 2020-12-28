@@ -10,17 +10,17 @@ namespace Mapper
     {
         private readonly IMapperSession _mySession;
         private bool _isMyConnection;
-        
+
         private SqlCommand CreateCommand()
         {
             return _mySession.CreateCommand();
         }
-        
+
         public MapperCreditNote(IMapperSession s)
         {
             _mySession = s;
         }
-        
+
         public void Create(CreditNote entity)
         {
             throw new System.NotImplementedException();
@@ -38,7 +38,7 @@ namespace Mapper
 
             SqlCommand cmd = CreateCommand();
             cmd.CommandText = $"SELECT * FROM CreditNote WHERE {condition}";
-            
+
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {

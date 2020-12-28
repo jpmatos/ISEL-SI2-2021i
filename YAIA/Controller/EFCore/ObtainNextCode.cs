@@ -24,7 +24,8 @@ namespace Controller.EFCore
                         return "FT" + DateTime.Now.Year + "-" + (invoices.Count + 1);
                     case "creditnote":
                         List<CreditNote> creditNotes = ctx.CreditNotes
-                            .FromSqlRaw("SELECT * FROM CreditNote WHERE YEAR(CreditNote.creation_date) = YEAR(GETDATE())")
+                            .FromSqlRaw(
+                                "SELECT * FROM CreditNote WHERE YEAR(CreditNote.creation_date) = YEAR(GETDATE())")
                             .AsNoTracking().ToList();
                         return "NT" + DateTime.Now.Year + "-" + (creditNotes.Count + 1);
                     default:

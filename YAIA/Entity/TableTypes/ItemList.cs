@@ -4,7 +4,7 @@ namespace Entity.TableTypes
     {
         public string Sku { get; set; }
         public int Quantity { get; set; }
-        
+
         public ItemList(string sku, int quantity)
         {
             Sku = sku;

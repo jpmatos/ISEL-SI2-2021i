@@ -1,7 +1,5 @@
 using System.Data;
-using System.Data.SqlTypes;
 using System.Diagnostics;
-using Entity;
 using IMapper;
 using Mapper;
 using Microsoft.Data.SqlClient;
@@ -22,7 +20,7 @@ namespace Controller.ADO
                 InsertInvoice.Execute(nif, name, address);
                 string invoice = iMap.GetLatestInvoiceCode();
                 InsertItemToInvoice.Execute(invoice, itemToAddDataTable);
-                
+
                 using SqlCommand cmd = s.CreateCommand();
                 cmd.CommandText = "updateInvoiceState";
                 cmd.CommandType = CommandType.StoredProcedure;

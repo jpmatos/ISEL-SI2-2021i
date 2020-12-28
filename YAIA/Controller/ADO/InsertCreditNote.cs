@@ -14,13 +14,13 @@ namespace Controller.ADO
             try
             {
                 isMyConnection = s.OpenConnection();
-                
+
                 using SqlCommand cmd = s.CreateCommand();
                 cmd.CommandText = "insertCreditNote";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@invoice", invoiceValue);
                 cmd.Parameters.AddWithValue("@itemList", itemList);
-                
+
                 cmd.ExecuteReader();
             }
             catch (SqlException e)

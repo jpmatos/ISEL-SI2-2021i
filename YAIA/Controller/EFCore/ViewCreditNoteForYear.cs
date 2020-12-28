@@ -16,7 +16,8 @@ namespace Controller.EFCore
             {
                 using YAIA_Context ctx = new YAIA_Context();
                 SqlParameter year = new SqlParameter("@year", yearValue);
-                List<CreditNote> result = ctx.CreditNotes.FromSqlRaw($"SELECT * FROM viewCreditNoteYear({@year})", year).AsNoTracking().ToList();
+                List<CreditNote> result = ctx.CreditNotes.FromSqlRaw($"SELECT * FROM viewCreditNoteYear({@year})", year)
+                    .AsNoTracking().ToList();
                 return result.GetEnumerator();
             }
             catch (SqlException e)

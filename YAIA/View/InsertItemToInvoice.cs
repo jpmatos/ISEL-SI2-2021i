@@ -21,7 +21,7 @@ namespace View
                     Console.WriteLine("Item list can't be empty!");
                     return;
                 }
-                
+
                 DataTable itemToAddDataTable = new DataTable();
                 itemToAddDataTable.Columns.Add("SKU", typeof(string));
                 itemToAddDataTable.Columns.Add("units", typeof(int));
@@ -30,7 +30,7 @@ namespace View
 
                 foreach (var item in itemToAdd)
                     itemToAddDataTable.Rows.Add(item.Sku, item.Units, item.Discount, item.Description);
-                
+
                 switch (dataAccess)
                 {
                     case DataAccess.Ado:

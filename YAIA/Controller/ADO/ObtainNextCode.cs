@@ -23,8 +23,10 @@ namespace Controller.ADO
                         return "FT" + DateTime.Now.Year + "-" + (invoices.Length + 1);
                     case "creditnote":
                         IMapperCreditNote cnMap = s.CreateCreditNote();
-                        Entity.CreditNote[] creditNotes = cnMap.Read("YEAR(CreditNote.creation_date) = YEAR(GETDATE())");
-                        return "NT" + DateTime.Now.Year + "-" + (creditNotes.Length + 1);;
+                        Entity.CreditNote[] creditNotes =
+                            cnMap.Read("YEAR(CreditNote.creation_date) = YEAR(GETDATE())");
+                        return "NT" + DateTime.Now.Year + "-" + (creditNotes.Length + 1);
+                        ;
                     default:
                         Debug.WriteLine($"Invalid option '{option}'");
                         return "INVALID";
