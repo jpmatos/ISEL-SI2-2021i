@@ -5,6 +5,10 @@ namespace Connection
 {
     public abstract class AbstractSession : ISession
     {
+        public static string UserId { get; set; }
+        public static string Password { get; set; }
+        public const string DataSource = "localhost";
+        public const string InitialCatalog = "SI2_Grupo02_2021i";
         private SqlTransaction _currentTrans;
         private SqlConnection _currentConn;
         private readonly string _connectionString;
@@ -13,14 +17,19 @@ namespace Connection
         public AbstractSession()
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "localhost";
-            builder.InitialCatalog = "SI2_Grupo02_2021i";
-            builder.UserID = "sa";//cr.Username;
-            builder.Password = "Jpp55tm123";//cr.Password;
+            builder.DataSource = DataSource;
+            builder.InitialCatalog = InitialCatalog;
+            builder.UserID = UserId;//cr.Username;
+            builder.Password = Password;//cr.Password;
             builder.MaxPoolSize = 10;
             
             _connectionString = builder.ConnectionString; 
-            //TODO Connection String here
+        }
+        
+        public void Login()
+        {
+            using SqlConnection con = new SqlConnection(_connectionString);
+            con.Open();
         }
 
         public bool BeginTran()

@@ -70,6 +70,17 @@
           </e>
         </e>
       </e>
+      <e p="EFCoreTest" t="IncludeRecursive">
+        <e p="EFCoreTest.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EFCoreTest.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="Entity" t="IncludeRecursive">
         <e p="Contributor.cs" t="Include" />
         <e p="CreditNote.cs" t="Include" />
