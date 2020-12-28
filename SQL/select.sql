@@ -12,6 +12,8 @@ FROM Contributor
 SELECT *
 FROM Invoice
 
+UPDATE Invoice SET NIF = 0 WHERE Invoice.code = 'FT2020-1'
+
 SELECT *
 FROM Product
 

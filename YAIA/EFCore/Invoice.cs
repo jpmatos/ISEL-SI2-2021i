@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -17,6 +18,7 @@ namespace EFCore
         public string Code { get; set; }
         public int Nif { get; set; }
         public string State { get; set; }
+        [ConcurrencyCheck]
         public decimal? TotalValue { get; set; }
         public decimal? TotalIva { get; set; }
         public DateTime CreationDate { get; set; }

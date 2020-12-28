@@ -30,6 +30,7 @@
         </e>
         <e p="Controller.csproj" t="IncludeRecursive" />
         <e p="EFCore" t="Include">
+          <e p="ConcurrencyExceptionExample.cs" t="Include" />
           <e p="EmitInvoice.cs" t="Include" />
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
@@ -118,6 +119,7 @@
         </e>
       </e>
       <e p="View" t="IncludeRecursive">
+        <e p="ConcurrencyExceptionExample.cs" t="Include" />
         <e p="EmitInvoice.cs" t="Include" />
         <e p="InsertCreditNote.cs" t="Include" />
         <e p="InsertInvoice.cs" t="Include" />

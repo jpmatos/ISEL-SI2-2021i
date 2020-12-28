@@ -37,6 +37,7 @@ namespace YAIA
             ViewCreditNoteForYear,
             ObtainCode,
             EmitInvoice,
+            ConcurrencyException,
             SwitchData
         }
         
@@ -50,6 +51,7 @@ namespace YAIA
             _dbMethods.Add(Option.ViewCreditNoteForYear, new ViewCreditNoteForYear().Query);
             _dbMethods.Add(Option.ObtainCode, new ObtainCreditCode().Query);
             _dbMethods.Add(Option.EmitInvoice, new EmitInvoice().Query);
+            _dbMethods.Add(Option.ConcurrencyException, new ConcurrencyExceptionExample().Query);
             _dbMethods.Add(Option.SwitchData, SwitchData);
         }
         
@@ -66,7 +68,8 @@ namespace YAIA
                 Console.WriteLine("5. j.View Credit Note For Year");
                 Console.WriteLine("6. 1.b) Obtain Next Invoice Or Credit Note Code");
                 Console.WriteLine("7. 1.c) Emit Invoice");
-                Console.WriteLine($"8. ---Switch Data Access--- (Current: {DataAccess.ToString().ToUpper()})");
+                Console.WriteLine("8. 4) Force Concurrency Exception In EFCore Optimist Locking");
+                Console.WriteLine($"9. ---Switch Data Access--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
                 option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);

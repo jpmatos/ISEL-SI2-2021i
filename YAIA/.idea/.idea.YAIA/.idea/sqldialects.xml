@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/../SQL/Exercises/j-creditnoteyear.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/../SQL/select.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Controller/ADO/ViewCreditNoteForYear.cs" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/Controller/EFCore/ConcurrencyExceptionExample.cs" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/Controller/EFCore/ObtainNextCode.cs" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Controller/EFCore/ViewCreditNoteForYear.cs" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Mapper/MapperContributor.cs" dialect="TSQL" />
