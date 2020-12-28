@@ -1,20 +1,26 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using Entity.TableTypes;
 using View.Interface;
 using View.Util;
 
 namespace View
 {
-    public class InsertItemToInvoice : AbstractView
+    public class EmitInvoice : AbstractView
     {
         public override void Query(DataAccess dataAccess)
         {
-            Parameter invoice = new Parameter("Invoice", typeof(string), false);
-            try
-            {
-                invoice.Value = Input(invoice);
+            Parameter nif = new Parameter("NIF", typeof(int), false);
+            Parameter name = new Parameter("Name", typeof(string), true);
+            Parameter address = new Parameter("Address", typeof(string), true);
+            
+            try{
+                nif.Value = Input(nif);
+                name.Value = Input(name);
+                address.Value = Input(address);
+                
                 List<ItemToAddList> itemToAdd = InputItemToAddList();
                 if (itemToAdd.Count == 0)
                 {
@@ -31,24 +37,27 @@ namespace View
                 foreach (var item in itemToAdd)
                     itemToAddDataTable.Rows.Add(item.Sku, item.Units, item.Discount, item.Description);
                 
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
                 switch (dataAccess)
                 {
                     case DataAccess.Ado:
-                        Controller.ADO.InsertItemToInvoice.Execute(invoice.Value, itemToAddDataTable);
+                        Controller.ADO.EmitInvoice.Execute(Convert.ToInt32(nif.Value), name.Value, address.Value, itemToAddDataTable);
                         break;
                     case DataAccess.EfCore:
-                        Controller.EFCore.InsertItemToInvoice.Execute(invoice.Value, itemToAddDataTable);
+                        Controller.EFCore.EmitInvoice.Execute(Convert.ToInt32(nif.Value), name.Value, address.Value, itemToAddDataTable);
                         break;
                     default:
                         Console.WriteLine($"Unknown data access '{dataAccess}'");
                         throw new Exception();
                 }
-
-                Console.WriteLine("Successfully inserted items in Invoice");
+                stopWatch.Stop();
+                Console.WriteLine("Successfully emitted invoice.");
+                Console.WriteLine($"Time: '{stopWatch.Elapsed.Milliseconds}ms'");
             }
             catch (Exception)
             {
-                Console.WriteLine("Failed to insert items in Invoice");
+                Console.WriteLine("Failed to emit Invoice");
             }
         }
     }

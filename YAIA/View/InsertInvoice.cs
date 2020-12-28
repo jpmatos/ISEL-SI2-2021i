@@ -15,9 +15,6 @@ namespace View
             
             try
             {
-                nif.Value = Input(nif);
-                name.Value = Input(name);
-                address.Value = Input(address);
                 switch (dataAccess)
                 {
                     case DataAccess.Ado:

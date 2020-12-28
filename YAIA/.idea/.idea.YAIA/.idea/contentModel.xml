@@ -21,6 +21,7 @@
       </e>
       <e p="Controller" t="IncludeRecursive">
         <e p="ADO" t="Include">
+          <e p="EmitInvoice.cs" t="Include" />
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
           <e p="InsertItemToInvoice.cs" t="Include" />
@@ -29,6 +30,7 @@
         </e>
         <e p="Controller.csproj" t="IncludeRecursive" />
         <e p="EFCore" t="Include">
+          <e p="EmitInvoice.cs" t="Include" />
           <e p="InsertCreditNote.cs" t="Include" />
           <e p="InsertInvoice.cs" t="Include" />
           <e p="InsertItemToInvoice.cs" t="Include" />
@@ -116,6 +118,7 @@
         </e>
       </e>
       <e p="View" t="IncludeRecursive">
+        <e p="EmitInvoice.cs" t="Include" />
         <e p="InsertCreditNote.cs" t="Include" />
         <e p="InsertInvoice.cs" t="Include" />
         <e p="InsertItemToInvoice.cs" t="Include" />

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using Entity;
 using IMapper;
 using Microsoft.Data.SqlClient;
@@ -64,6 +65,20 @@ namespace Mapper
         public void Delete(Invoice entity)
         {
             throw new System.NotImplementedException();
+        }
+
+        public string GetLatestInvoiceCode()
+        {
+            _isMyConnection = _mySession.OpenConnection();
+
+            SqlCommand cmd = CreateCommand();
+            cmd.CommandText = "SELECT TOP 1 @Code=code FROM Invoice ORDER BY Invoice.creation_date DESC";
+            SqlParameter p1 = cmd.Parameters.Add("@Code", SqlDbType.NVarChar, 12);
+            p1.Direction = ParameterDirection.Output;
+
+            cmd.ExecuteNonQuery();
+
+            return (string)p1.Value;
         }
     }
 }

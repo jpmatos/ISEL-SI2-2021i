@@ -5,6 +5,6 @@ namespace IMapper
 {
     public interface IMapperInvoice : IMapper<Invoice, int>
     {
-        
+        string GetLatestInvoiceCode();
     }
 }

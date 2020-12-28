@@ -36,6 +36,7 @@ namespace YAIA
             UpdateInvoiceValue,
             ViewCreditNoteForYear,
             ObtainCode,
+            EmitInvoice,
             SwitchData
         }
         
@@ -48,6 +49,7 @@ namespace YAIA
             _dbMethods.Add(Option.UpdateInvoiceValue, new UpdateInvoiceValue().Query);
             _dbMethods.Add(Option.ViewCreditNoteForYear, new ViewCreditNoteForYear().Query);
             _dbMethods.Add(Option.ObtainCode, new ObtainCreditCode().Query);
+            _dbMethods.Add(Option.EmitInvoice, new EmitInvoice().Query);
             _dbMethods.Add(Option.SwitchData, SwitchData);
         }
         
@@ -62,15 +64,16 @@ namespace YAIA
                 Console.WriteLine("3. h.Insert Items In Invoice");
                 Console.WriteLine("4. i.Update Invoice Value");
                 Console.WriteLine("5. j.View Credit Note For Year");
-                Console.WriteLine("6. e.Obtain Next Invoice Or Credit Note Code");
-                Console.WriteLine($"7. ---Switch Data Access--- (Current: {DataAccess.ToString().ToUpper()})");
+                Console.WriteLine("6. 1.b) Obtain Next Invoice Or Credit Note Code");
+                Console.WriteLine("7. 1.c) Emit Invoice");
+                Console.WriteLine($"8. ---Switch Data Access--- (Current: {DataAccess.ToString().ToUpper()})");
                 Console.WriteLine("0. Exit");
                 var result = Console.ReadLine();
                 option = (Option)Enum.Parse(typeof(Option), result ?? string.Empty);
             }
             catch (ArgumentException)
             {
-                // Nothing to do. User press select no option and press enter.
+                //Nothing to do. The option was not a valid one. Read another.
             }
 
             return option;
