@@ -5,6 +5,8 @@
 
 Yet Another Invoice Application (YAIA) is an information system for invoice management in a relational database using ADO.NET and Entity Framework Core.
 
-Read more about this project in the project's technical report:
+Read more about this project in the project's two phase technical reports:
 
-<img src = "https://icons.iconarchive.com/icons/hopstarter/soft-scraps/16/Adobe-PDF-Document-icon.png"> [TP2-SI2-51NG02-2021i.pdf (Release 2.0.0)](https://github.com/jpmatos/ISEL-SI2-2021i/releases/download/2.0.0/TP2-SI2-51NG02-2021i.pdf)
+<img src = "https://icons.iconarchive.com/icons/hopstarter/soft-scraps/16/Adobe-PDF-Document-icon.png"> [TP1-SI2-51NG02-2021i.pdf (Release 1.0.0)](https://github.com/jpmatos/ISEL-SI2-2021i/releases/download/1.0.0/TP1-SI2-51NG02-2020i.pdf) (Queries and Physical Model)
+
+<img src = "https://icons.iconarchive.com/icons/hopstarter/soft-scraps/16/Adobe-PDF-Document-icon.png"> [TP2-SI2-51NG02-2021i.pdf (Release 2.0.0)](https://github.com/jpmatos/ISEL-SI2-2021i/releases/download/2.0.0/TP2-SI2-51NG02-2021i.pdf) (ADO.NET and Entity Framework Core)
